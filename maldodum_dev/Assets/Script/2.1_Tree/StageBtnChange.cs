@@ -20,6 +20,8 @@ public class StageBtnChange : MonoBehaviour
         string stage2 = PlayerPrefs.GetString("Stage2");
         string stage3 = PlayerPrefs.GetString("Stage3");
 
+        string level = PlayerPrefs.GetString("level");          //씨앗 단계는 seed, 새싹 단계는 spout
+
         if (stage1.Equals("complete"))
         {
             this.btn1.GetComponent<Image>().sprite = this.img1;
@@ -32,6 +34,8 @@ public class StageBtnChange : MonoBehaviour
         {
             this.btn3.GetComponent<Image>().sprite = this.img3;
         }
+
+        Debug.Log(level);
     }
 
     void Update()
