@@ -22,6 +22,7 @@ public class StageBtnChange : MonoBehaviour
 
         string level = PlayerPrefs.GetString("level");          //씨앗 단계는 seed, 새싹 단계는 spout
 
+        //todo. 단계마다 scrollView value 옮겨주기 -> 2단계에서는 2단계가 중앙에 오도록
         if (stage1.Equals("complete"))
         {
             this.btn1.GetComponent<Image>().sprite = this.img1;

@@ -65,6 +65,8 @@ public class ScrollManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if(!isDrag) scrollbar.value = Mathf.Lerp(scrollbar.value, targetPos, 0.1f);   
     }
 
+
+    //todo. 23세 45세 인덱스 눌렀을 때 자동 스크롤 하지 않거나(tabClick 삭제) 디자인을 바꾸거나
     public void TabClick(int n)
     {
         targetIndex = n;
