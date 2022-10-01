@@ -67,14 +67,15 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 				Debug.LogError("nothing recorded");
 				return;
 			}
+
+			// 녹음된 audioclip을 local에 저
+			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer, _recording);
+
 			//audio clip to byte array
 			byte[] byteData = getByteFromAudioClip(_recording);
 
 			// 녹음된 audioclip api 서버로 보냄
 			StartCoroutine(PostVoice(url, byteData));
-
-			// 녹음된 audioclip을 local에 저
-			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer, _recording);
 		}
 		return;
 	}
