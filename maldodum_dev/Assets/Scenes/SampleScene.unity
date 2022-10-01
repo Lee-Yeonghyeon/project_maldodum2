@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 2_BookCase
 --- !u!114 &526258269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +471,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 526258268}
         m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
-        m_MethodName: Move2Scene
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -291,9 +291,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 216855710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed02160ea98a04b3195e2f99b29a1629, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 3.1.1_page1.1
 --- !u!114 &216855713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,8 +340,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 216855712}
-        m_TargetAssemblyTypeName: S3_SceneChange, Assembly-CSharp
-        m_MethodName: Move3_1_1Scene
+        m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -587,6 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 2.1_Tree
 --- !u!114 &514495824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +635,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 514495823}
         m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
-        m_MethodName: Move2_1Scene
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -729,9 +731,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1115317460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed02160ea98a04b3195e2f99b29a1629, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 3.1.3_page1.3
 --- !u!114 &1115317463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,8 +780,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1115317462}
-        m_TargetAssemblyTypeName: S3_SceneChange, Assembly-CSharp
-        m_MethodName: Move3_1_3Scene
+        m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

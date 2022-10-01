@@ -207,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 149933836}
-        m_TargetAssemblyTypeName: S3_SceneChange, Assembly-CSharp
+        m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
         m_MethodName: RestartScene
         m_Mode: 1
         m_Arguments:
@@ -265,9 +265,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 149933831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed02160ea98a04b3195e2f99b29a1629, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &266058391
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,8 +580,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 762533674}
-        m_TargetAssemblyTypeName: S3_SceneChange, Assembly-CSharp
-        m_MethodName: Move3_0_1Scene
+        m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -637,9 +638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 762533669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed02160ea98a04b3195e2f99b29a1629, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 3.0.1_page0.1
 --- !u!1 &844353442
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,8 +726,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 844353447}
-        m_TargetAssemblyTypeName: S3_SceneChange, Assembly-CSharp
-        m_MethodName: Move3_1_2Scene
+        m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -782,9 +784,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 844353442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed02160ea98a04b3195e2f99b29a1629, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 3.1.2_page1.2
 --- !u!1 &1048788665
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +873,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1048788670}
         m_TargetAssemblyTypeName: UI_SceneChange, Assembly-CSharp
-        m_MethodName: Move2_1Scene
+        m_MethodName: MoveParamScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -930,6 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a20144eb3544e9aa6f93a5890abc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 2.1_Tree
 --- !u!1 &1136877959
 GameObject:
   m_ObjectHideFlags: 0

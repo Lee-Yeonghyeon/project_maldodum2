@@ -5,26 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class UI_SceneChange : MonoBehaviour
 {
-    
-    void Start()
+
+    public string sceneName;
+
+
+    public void RestartScene()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void Update()
+    public void MoveParamScene()
     {
-        
+        SceneManager.LoadScene(sceneName);
     }
 
-    public void Move2Scene()
-    {
-        Debug.Log("move to 2");
-        SceneManager.LoadScene("2_BookCase");
-    }
-
-    public void Move2_1Scene()
-    {
-        Debug.Log("move to 2.1");
-        SceneManager.LoadScene("2.1_Tree");
-    }
 }
