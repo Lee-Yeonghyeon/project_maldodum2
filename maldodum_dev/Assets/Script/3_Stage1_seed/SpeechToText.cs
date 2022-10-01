@@ -3,32 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
-using System.Net;
 using System.Text;
 using System.IO;
-using System.Collections.Specialized;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
 	private string _microphoneID = null;
 	private AudioClip _recording = null;
-	private int _recordingLengthSec = 5;
+	private int _recordingLengthSec = 3;
 	private int _recordingHZ = 22050;
 	const int BlockSize_16Bit = 2;
 	string url = "https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=Kor";
+
+	public string answer;
+	public string correctSceneName;
+	public string wrongSceneName;
 
 	public Image btn;
 	public Sprite select_btn;
 	public Sprite unSelect_btn;
 	public bool isSelect = true;
 
-	int num = 2;
+	void Start()
+	{
+		_microphoneID = Microphone.devices[0];
+	}
 
 	// 버튼을 OnPointerDown 할 때 호출
 	public void startRecording()
 	{
+		string fileCheck = @"/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer + ".wav";
+
+		if (File.Exists(fileCheck))
+		{
+			try
+			{
+				File.Delete(fileCheck);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("The deletion failed: {0}", e.Message);
+			}
+		}
+
 		Debug.Log("start recording");
 		_recording = Microphone.Start(_microphoneID, false, _recordingLengthSec, _recordingHZ);
 	}
@@ -36,6 +56,7 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 	// 버튼을 OnPointerUp 할 때 호출
 	public void stopRecording()
 	{
+
 		if (Microphone.IsRecording(_microphoneID))
 		{
 			Microphone.End(_microphoneID);
@@ -47,33 +68,35 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 				return;
 			}
 			//audio clip to byte array
-			//byte[] byteData = getByteFromAudioClip(_recording);
+			byte[] byteData = getByteFromAudioClip(_recording);
 
 			// 녹음된 audioclip api 서버로 보냄
-			//StartCoroutine(PostVoice(url, byteData));
-			speechTransformText();
+			StartCoroutine(PostVoice(url, byteData));
+
+			// 녹음된 audioclip을 local에 저
+			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer, _recording);
 		}
 		return;
 	}
 
-	//private byte[] getByteFromAudioClip(AudioClip audioClip)
-	//{
-	//	MemoryStream stream = new MemoryStream();
-	//	const int headerSize = 44;
-	//	ushort bitDepth = 16;
+	private byte[] getByteFromAudioClip(AudioClip audioClip)
+	{
+		MemoryStream stream = new MemoryStream();
+		const int headerSize = 44;
+		ushort bitDepth = 16;
 
-	//	int fileSize = audioClip.samples * BlockSize_16Bit + headerSize;
+		int fileSize = audioClip.samples * BlockSize_16Bit + headerSize;
 
-	//	// audio clip의 정보들을 file stream에 추가
-	//	WriteFileHeader(ref stream, fileSize);
-	//	WriteFileFormat(ref stream, audioClip.channels, audioClip.frequency, bitDepth);
-	//	WriteFileData(ref stream, audioClip, bitDepth);
+		// audio clip의 정보들을 file stream에 추가
+		WriteFileHeader(ref stream, fileSize);
+		WriteFileFormat(ref stream, audioClip.channels, audioClip.frequency, bitDepth);
+		WriteFileData(ref stream, audioClip, bitDepth);
 
-	//	// stream을 array형태로 바꿈
-	//	byte[] bytes = stream.ToArray();
+		// stream을 array형태로 바꿈
+		byte[] bytes = stream.ToArray();
 
-	//	return bytes;
-	//}
+		return bytes;
+	}
 
 	// 받아온 값에 간편하게 접근하기 위한 JSON 선언
 	[Serializable]
@@ -112,44 +135,18 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 			VoiceRecognize voiceRecognize = JsonUtility.FromJson<VoiceRecognize>(message);
 
 			Debug.Log("Voice Server responded: " + voiceRecognize.text);
+
+            if (answer.Equals(voiceRecognize.text))
+            {
+				SceneManager.LoadScene(correctSceneName);
+			}
+            else
+            {
+				SceneManager.LoadScene(wrongSceneName);
+			}
+
 		}
 	}
-
-	private void speechTransformText()
-	{
-		string FilePath = $"Assets/Audio/test{num}.mp3";
-		FileStream fs = new FileStream(FilePath, FileMode.Open, FileAccess.Read);
-		byte[] fileData = new byte[fs.Length];
-		fs.Read(fileData, 0, fileData.Length);
-		fs.Close();
-
-		string lang = "Kor";    // 언어 코드 ( Kor, Jpn, Eng, Chn )
-		string url = $"https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang={lang}";
-		HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-		request.Headers.Add("X-NCP-APIGW-API-KEY-ID", "ex75mlx2mv");
-		request.Headers.Add("X-NCP-APIGW-API-KEY", "GmvcS77loE4q0eVFmSS6vLiVBQ8JEICsRQRnuP4A");
-		request.Method = "POST";
-		request.ContentType = "application/octet-stream";
-
-
-		request.ContentLength = fileData.Length;
-		using (Stream requestStream = request.GetRequestStream())
-		{
-			requestStream.Write(fileData, 0, fileData.Length);
-			requestStream.Close();
-		}
-		HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-		Stream stream = response.GetResponseStream();
-		StreamReader reader = new StreamReader(stream, Encoding.UTF8);
-		string text = reader.ReadToEnd();
-		stream.Close();
-		response.Close();
-		reader.Close();
-		VoiceRecognize voiceRecognize = JsonUtility.FromJson<VoiceRecognize>(text);
-		Debug.Log(voiceRecognize.text);
-		PlayerPrefs.SetString("tx", voiceRecognize.text);
-	}
-
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
@@ -178,13 +175,128 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 		}
 	}
 
-	void Start()
+	//
+	// PCM2WAV
+	//
+	private static int WriteFileHeader(ref MemoryStream stream, int fileSize)
 	{
-		_microphoneID = Microphone.devices[0];
+		int count = 0;
+		int total = 12;
+
+		// riff chunk id
+		byte[] riff = Encoding.ASCII.GetBytes("RIFF");
+		count += WriteBytesToMemoryStream(ref stream, riff, "ID");
+
+		// riff chunk size
+		int chunkSize = fileSize - 8; // total size - 8 for the other two fields in the header
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(chunkSize), "CHUNK_SIZE");
+
+		byte[] wave = Encoding.ASCII.GetBytes("WAVE");
+		count += WriteBytesToMemoryStream(ref stream, wave, "FORMAT");
+
+		// Validate header
+		Debug.AssertFormat(count == total, "Unexpected wav descriptor byte count: {0} == {1}", count, total);
+
+		return count;
 	}
 
-	void Update()
+	private static int WriteFileFormat(ref MemoryStream stream, int channels, int sampleRate, UInt16 bitDepth)
 	{
+		int count = 0;
+		int total = 24;
 
+		byte[] id = Encoding.ASCII.GetBytes("fmt ");
+		count += WriteBytesToMemoryStream(ref stream, id, "FMT_ID");
+
+		int subchunk1Size = 16; // 24 - 8
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(subchunk1Size), "SUBCHUNK_SIZE");
+
+		UInt16 audioFormat = 1;
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(audioFormat), "AUDIO_FORMAT");
+
+		UInt16 numChannels = Convert.ToUInt16(channels);
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(numChannels), "CHANNELS");
+
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(sampleRate), "SAMPLE_RATE");
+
+		int byteRate = sampleRate * channels * BytesPerSample(bitDepth);
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(byteRate), "BYTE_RATE");
+
+		UInt16 blockAlign = Convert.ToUInt16(channels * BytesPerSample(bitDepth));
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(blockAlign), "BLOCK_ALIGN");
+
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(bitDepth), "BITS_PER_SAMPLE");
+
+		// Validate format
+		Debug.AssertFormat(count == total, "Unexpected wav fmt byte count: {0} == {1}", count, total);
+
+		return count;
 	}
+
+	private static int WriteFileData(ref MemoryStream stream, AudioClip audioClip, UInt16 bitDepth)
+	{
+		int count = 0;
+		int total = 8;
+
+		// Copy float[] data from AudioClip
+		float[] data = new float[audioClip.samples * audioClip.channels];
+		audioClip.GetData(data, 0);
+
+		byte[] bytes = ConvertAudioClipDataToInt16ByteArray(data);
+
+		byte[] id = Encoding.ASCII.GetBytes("data");
+		count += WriteBytesToMemoryStream(ref stream, id, "DATA_ID");
+
+		int subchunk2Size = Convert.ToInt32(audioClip.samples * BlockSize_16Bit); // BlockSize (bitDepth)
+		count += WriteBytesToMemoryStream(ref stream, BitConverter.GetBytes(subchunk2Size), "SAMPLES");
+
+		// Validate header
+		Debug.AssertFormat(count == total, "Unexpected wav data id byte count: {0} == {1}", count, total);
+
+		// Write bytes to stream
+		count += WriteBytesToMemoryStream(ref stream, bytes, "DATA");
+
+		// Validate audio data
+		Debug.AssertFormat(bytes.Length == subchunk2Size, "Unexpected AudioClip to wav subchunk2 size: {0} == {1}", bytes.Length, subchunk2Size);
+
+		return count;
+	}
+
+	private static byte[] ConvertAudioClipDataToInt16ByteArray(float[] data)
+	{
+		MemoryStream dataStream = new MemoryStream();
+
+		int x = sizeof(Int16);
+
+		Int16 maxValue = Int16.MaxValue;
+
+		int i = 0;
+		while (i < data.Length)
+		{
+			dataStream.Write(BitConverter.GetBytes(Convert.ToInt16(data[i] * maxValue)), 0, x);
+			++i;
+		}
+		byte[] bytes = dataStream.ToArray();
+
+		// Validate converted bytes
+		Debug.AssertFormat(data.Length * x == bytes.Length, "Unexpected float[] to Int16 to byte[] size: {0} == {1}", data.Length * x, bytes.Length);
+
+		dataStream.Dispose();
+
+		return bytes;
+	}
+
+	private static int WriteBytesToMemoryStream(ref MemoryStream stream, byte[] bytes, string tag = "")
+	{
+		int count = bytes.Length;
+		stream.Write(bytes, 0, count);
+		//Debug.LogFormat ("WAV:{0} wrote {1} bytes.", tag, count);
+		return count;
+	}
+
+	private static int BytesPerSample(UInt16 bitDepth)
+	{
+		return bitDepth / 8;
+	}
+
 }
