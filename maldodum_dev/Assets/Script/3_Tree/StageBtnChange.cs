@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class StageBtnChange : MonoBehaviour
 {
+    public Scrollbar scrollbar;
 
     public Button btn1;
     public Button btn2;
@@ -22,17 +23,19 @@ public class StageBtnChange : MonoBehaviour
 
         string level = PlayerPrefs.GetString("level");          //씨앗 단계는 seed, 새싹 단계는 spout
 
-        //todo. 단계마다 scrollView value 옮겨주기 -> 2단계에서는 2단계가 중앙에 오도록
         if (stage1.Equals("complete"))
         {
+            scrollbar.value = 0.5f;
             this.btn1.GetComponent<Image>().sprite = this.img1;
         }
         if (stage2.Equals("complete"))
         {
+            scrollbar.value = 1.0f;
             this.btn2.GetComponent<Image>().sprite = this.img2;
         }
         if (stage3.Equals("complete"))
         {
+            scrollbar.value = 1.0f;
             this.btn3.GetComponent<Image>().sprite = this.img3;
         }
 
