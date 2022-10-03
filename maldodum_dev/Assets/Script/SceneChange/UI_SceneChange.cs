@@ -8,7 +8,6 @@ public class UI_SceneChange : MonoBehaviour
 
     public string sceneName;
 
-
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

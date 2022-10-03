@@ -7,9 +7,9 @@ public class SaveUserInfo : MonoBehaviour
     
     void Start()
     {
-        PlayerPrefs.SetString("Stage1", "complete");      //단계 완료시 complete, 미완료시 incomplete
-        PlayerPrefs.SetString("Stage2", "complete");
-        PlayerPrefs.SetString("Stage3", "complete");
+        PlayerPrefs.SetString("Stage1", "incomplete");      //단계 완료시 complete, 미완료시 incomplete
+        PlayerPrefs.SetString("Stage2", "incomplete");
+        PlayerPrefs.SetString("Stage3", "incomplete");
     }
 
     
