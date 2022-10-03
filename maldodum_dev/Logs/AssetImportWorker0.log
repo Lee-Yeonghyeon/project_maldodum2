@@ -4275,3 +4275,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1011.877292 seconds.
+  path: Assets/Scenes/3_BookSeed
+  artifactKey: Guid(e76ee3d317a9e4503b4745a5f2ceb5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed using Guid(e76ee3d317a9e4503b4745a5f2ceb5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e907f810b1e6167521411fcc7f948275') in 0.011380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.397083 seconds.
+  path: Assets/Scenes/3_BookSeed/Stage1
+  artifactKey: Guid(c9c68ef07053542f5916f9306fa9dffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/Stage1 using Guid(c9c68ef07053542f5916f9306fa9dffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7e2b259ad8fe955af148f4969ca226') in 0.002895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.123514 seconds.
+  path: Assets/Scenes/Book_Stage1/3_Seed/3.0.1_page0.1.unity
+  artifactKey: Guid(7422f4be05f4b44edb9a4da806fcbbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Book_Stage1/3_Seed/3.0.1_page0.1.unity using Guid(7422f4be05f4b44edb9a4da806fcbbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371b7be93c3346bb247820006d1cd5ea') in 0.024472 seconds 
