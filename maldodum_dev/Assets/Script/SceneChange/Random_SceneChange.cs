@@ -17,18 +17,19 @@ public class Random_SceneChange : MonoBehaviour
         {
             case 1:
                 Debug.Log("1번으로 이동:" + randomNum);
-                //SceneManager.LoadScene(sceneName1);
+                PlayerPrefs.SetString("Word", "병아리");
+                SceneManager.LoadScene(sceneName1);
                 break;
             case 2:
                 Debug.Log("2번으로 이동:" + randomNum);
-                //SceneManager.LoadScene(sceneName2);
+                PlayerPrefs.SetString("Word", "오리");
+                SceneManager.LoadScene(sceneName2);
                 break;
             case 3:
                 Debug.Log("3번으로 이동:" + randomNum);
-                //SceneManager.LoadScene(sceneName3);
+                PlayerPrefs.SetString("Word", "삐악삐악");
+                SceneManager.LoadScene(sceneName3);
                 break;
         }
-
-        SceneManager.LoadScene(sceneName1);
     }
 }

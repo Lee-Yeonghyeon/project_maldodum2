@@ -38,6 +38,7 @@ public class StageBtnChange : MonoBehaviour
         if (stage3.Equals("complete"))
         {
             scrollbar.value = 1.0f;
+            this.btn3.interactable = true;
             this.btn3.GetComponent<Image>().sprite = this.img3;
         }
 
