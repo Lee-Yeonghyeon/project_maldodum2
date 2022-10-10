@@ -19,8 +19,8 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 	string url = "https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=Kor";
 
 	public string answer;
-	public string correctSceneName;
-	public string wrongSceneName;
+	public Button btnReplay;
+	public Button btnSave;
 
 	public Image btn;
 	public Sprite select_btn;
@@ -35,7 +35,7 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 	// 버튼을 OnPointerDown 할 때 호출
 	public void startRecording()
 	{
-		string fileCheck = @"/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer + ".wav";
+		string fileCheck = @"/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer + ".wav";
 
 		if (File.Exists(fileCheck))
 		{
@@ -69,7 +69,7 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 			}
 
 			// 녹음된 audioclip을 local에 저
-			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Audio/practice_files/" + answer, _recording);
+			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer, _recording);
 
 			//audio clip to byte array
 			byte[] byteData = getByteFromAudioClip(_recording);
@@ -135,16 +135,11 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 			string message = request.downloadHandler.text;
 			VoiceRecognize voiceRecognize = JsonUtility.FromJson<VoiceRecognize>(message);
 
+			PlayerPrefs.SetString("sttResult", voiceRecognize.text);
 			Debug.Log("Voice Server responded: " + voiceRecognize.text);
 
-            if (answer.Equals(voiceRecognize.text))
-            {
-				SceneManager.LoadScene(correctSceneName);
-			}
-            else
-            {
-				SceneManager.LoadScene(wrongSceneName);
-			}
+			btnReplay.interactable = true;
+			btnSave.interactable = true;
 
 		}
 	}
