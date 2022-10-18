@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    AudioSource soundSource;
+    public Image card;
+    public Sprite active_card;
+    public Sprite deactive_card;
+    bool active = false;
+
     void Start()
     {
-        
+        soundSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (!soundSource.isPlaying && active)
+        {
+            card.sprite = deactive_card;
+            active = false;
+        }
+    }
+
+    public void PlayCard()
+    {
+        card.sprite = active_card;
+        soundSource.Play();
+        active = true;
     }
 }
