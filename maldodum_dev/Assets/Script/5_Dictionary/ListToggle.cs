@@ -44,11 +44,25 @@ public class ListToggle : MonoBehaviour
         this.cardChicken = GameObject.Find("CardList_NiceChicken");
         this.cardCook = GameObject.Find("CardList_CookCookABC");
 
-        cardChicken.SetActive(true);
-        cardCook.SetActive(false);
+        string dictionaryBook = PlayerPrefs.GetString("dictionary");
 
-        //todo. 이전 화면에서 넘어올 경우, chicken이 기본값인 것 수정 필요
-        PlayerPrefs.SetString("dictionary", "chicken");
+        if (dictionaryBook.Equals("chicken") || dictionaryBook.Equals(""))
+        {
+            isSelect1 = true;
+            PlayerPrefs.SetString("dictionary", "chicken");
+            list1.sprite = select_list1;
+            list2.sprite = unSelect_list2;
+            cardChicken.SetActive(true);
+            cardCook.SetActive(false);
+        } else
+        {
+            isSelect1 = false;
+            PlayerPrefs.SetString("dictionary", "cookcook");
+            list1.sprite = unSelect_list1;
+            list2.sprite = select_list2;
+            cardChicken.SetActive(false);
+            cardCook.SetActive(true);
+        }
     }
 
     void Update()
