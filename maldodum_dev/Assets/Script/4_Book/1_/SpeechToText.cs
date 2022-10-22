@@ -12,11 +12,12 @@ using UnityEngine.SceneManagement;
 public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
 	private string _microphoneID = null;
-	private AudioClip _recording = null;
 	private int _recordingLengthSec = 3;
 	private int _recordingHZ = 22050;
 	const int BlockSize_16Bit = 2;
 	string url = "https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=Kor";
+
+	public AudioSource audioSource;
 
 	public string answer;
 	public Button btnReplay;
@@ -50,7 +51,7 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 		}
 
 		Debug.Log("start recording");
-		_recording = Microphone.Start(_microphoneID, false, _recordingLengthSec, _recordingHZ);
+		audioSource.clip = Microphone.Start(_microphoneID, false, _recordingLengthSec, _recordingHZ);
 	}
 
 	// 버튼을 OnPointerUp 할 때 호출
@@ -62,17 +63,17 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 			Microphone.End(_microphoneID);
 
 			Debug.Log("stop recording");
-			if (_recording == null)
+			if (audioSource.clip == null)
 			{
 				Debug.LogError("nothing recorded");
 				return;
 			}
 
 			// 녹음된 audioclip을 local에 저
-			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer, _recording);
+			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer, audioSource.clip);
 
 			//audio clip to byte array
-			byte[] byteData = getByteFromAudioClip(_recording);
+			byte[] byteData = getByteFromAudioClip(audioSource.clip);
 
 			// 녹음된 audioclip api 서버로 보냄
 			StartCoroutine(PostVoice(url, byteData));

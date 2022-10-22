@@ -924,6 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 1013383782}
   videoCanvas: {fileID: 423090753}
+  playOnAwake: 1
 --- !u!1 &1165650293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 1013383782}
   videoCanvas: {fileID: 423090753}
+  playOnAwake: 0
 --- !u!1 &1416406933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1493,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1855,6 +1857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e3feef88fc74aaa9768a8f0e078b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1699685358}
   answer: "\uBCD1\uC544\uB9AC"
   btnReplay: {fileID: 1699685354}
   btnSave: {fileID: 219650177}

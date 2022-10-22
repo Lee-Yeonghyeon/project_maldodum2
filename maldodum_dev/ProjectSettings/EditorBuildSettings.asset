@@ -95,4 +95,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/9_Dictionary/9.3_CookCookABC.unity
     guid: 7a5424bef49fb4bf282a3fc9a0b40f91
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 3d349884df8d248eb8f6d59b6ddc0050, type: 2}

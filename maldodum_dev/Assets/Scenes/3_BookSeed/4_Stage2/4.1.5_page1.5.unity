@@ -270,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 1119185323}
   videoCanvas: {fileID: 520032607}
+  playOnAwake: 0
 --- !u!1 &43321459
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +733,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1080152381}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1595,6 +1596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 1119185323}
   videoCanvas: {fileID: 520032607}
+  playOnAwake: 0
 --- !u!328 &1119185323
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -2248,6 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e3feef88fc74aaa9768a8f0e078b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1572972138}
   answer: "\uBCD1\uC544\uB9AC"
   btnReplay: {fileID: 1572972139}
   btnSave: {fileID: 1101756085}
