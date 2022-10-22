@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class VideoController : MonoBehaviour
+public class TutorialController : MonoBehaviour
 {
     public VideoPlayer video;
     public GameObject videoCanvas;
@@ -12,7 +12,6 @@ public class VideoController : MonoBehaviour
 
     void Start()
     {
-        //videoCanvas = GameObject.Find("Video");
         if (!playOnAwake)
         {
             videoCanvas.SetActive(false);
