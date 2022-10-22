@@ -7,14 +7,20 @@ public class VideoController : MonoBehaviour
 {
     public VideoPlayer video;
     public GameObject videoCanvas;
+    public bool playOnAwake;
     bool active = true;
 
     void Start()
     {
-        videoCanvas = GameObject.Find("Video");
+        //videoCanvas = GameObject.Find("Video");
+        if (!playOnAwake)
+        {
+            videoCanvas.SetActive(false);
+            active = false;
+        }
     }
 
-    
+
     void Update()
     {
         if(video.isPaused && active)

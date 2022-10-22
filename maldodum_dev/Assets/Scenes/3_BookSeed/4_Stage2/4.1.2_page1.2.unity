@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 1600211550}
   videoCanvas: {fileID: 373316052}
-  playOnAwake: 0
+  playOnAwake: 1
 --- !u!1 &263405052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,7 +2028,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1600211551}
   - component: {fileID: 1600211550}
-  - component: {fileID: 1600211549}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -2036,21 +2035,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1600211549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600211548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68fa766cb6be340aba05213bd8debbf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  video: {fileID: 1600211550}
-  videoCanvas: {fileID: 373316052}
-  playOnAwake: 1
 --- !u!328 &1600211550
 VideoPlayer:
   m_ObjectHideFlags: 0

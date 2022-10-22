@@ -1127,7 +1127,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1000903418}
   - component: {fileID: 1000903417}
-  - component: {fileID: 1000903416}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -1135,21 +1134,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1000903416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000903415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68fa766cb6be340aba05213bd8debbf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  video: {fileID: 1000903417}
-  videoCanvas: {fileID: 1288329390}
-  playOnAwake: 0
 --- !u!328 &1000903417
 VideoPlayer:
   m_ObjectHideFlags: 0
