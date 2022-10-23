@@ -36,7 +36,7 @@ public class Nav_SceneChange : MonoBehaviour
     {
         Debug.Log("move to dictionary");
         select_obj.transform.position = new Vector3(-5.95f, 1.6f, 0f);
-        //SceneManager.LoadScene("");
+        SceneManager.LoadScene("10.1_BookList");
     }
 
     public void MoveInformation()
