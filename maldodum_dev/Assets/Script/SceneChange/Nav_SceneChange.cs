@@ -32,7 +32,7 @@ public class Nav_SceneChange : MonoBehaviour
     {
         Debug.Log("move to infomation");
         //select_obj.transform.position = new Vector3(-5.95f, 0.35f, 0f);
-        //SceneManager.LoadScene("");
+        SceneManager.LoadScene("11_Information");
     }
 
     public void MoveSetting()
