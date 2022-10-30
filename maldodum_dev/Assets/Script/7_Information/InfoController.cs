@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -84,10 +86,23 @@ public class InfoController : MonoBehaviour
         numSun = GameObject.Find("num_sun").GetComponent<Text>();
 
 
+        //json parsing
+        string info = File.ReadAllText(Application.dataPath + "/InfoData.json");
+        BodyData body = JsonUtility.FromJson<BodyData>(info);
+        List<Data> datas = new List<Data>();
+
+        foreach (Data data in body.body)
+        {
+            datas.Add(data);
+        }
+        int datasSize = datas.Count;
+
+
         //profile
         name.text = "박돋움";
         age.text = "만 3세 (38개월)";
         string level = "spout";
+
         if (level.Equals("seed"))
         {
             levelImg.sprite = levelSeed;
@@ -96,19 +111,37 @@ public class InfoController : MonoBehaviour
             levelImg.sprite = levelSpout;
         }
 
+
         //accuracy
-        accuracyTotal.text = "88";
-        weekly.fillAmount = 0.75f;
-        weeklyText.text = "75%";
-        daily.fillAmount = 0.40f;
-        dailyText.text = "40%";
+        int accuTotalAccuracy = 0;
+        int accuTodayAccuracy = 0;
+        string today = DateTime.Now.ToString("dd");
+        int todayCount = 0;
+
+        for(int i=0; i < datasSize; i++)
+        {
+            accuTotalAccuracy += datas[i].accuracy;
+            if (today.Equals(datas[i].date))
+            {
+                accuTodayAccuracy += datas[i].accuracy;
+                todayCount++;
+            }
+        }
+
+        accuracyTotal.text = accuTotalAccuracy / datasSize + "";
+        weekly.fillAmount = (accuTotalAccuracy / datasSize) * 0.01f;
+        weeklyText.text = (accuTotalAccuracy / datasSize) + "%";
+        daily.fillAmount = (accuTodayAccuracy / todayCount) * 0.01f;
+        dailyText.text = (accuTodayAccuracy / todayCount) + "%";
+
 
         //book
         bookTotal.text = "1";
-        dateLast.text = "2022/10/29";
-        progressLast.fillAmount = 0.99f;
-        dateRecently.text = "2022/10/30";
-        progressRecently.fillAmount = 0.20f;
+        dateLast.text = DateTime.Now.ToString("yyyy/MM/dd");
+        progressLast.fillAmount = (accuTotalAccuracy / datasSize) * 0.01f;
+        dateRecently.text = DateTime.Now.ToString("yyyy/MM/dd");
+        progressRecently.fillAmount = (accuTotalAccuracy / datasSize) * 0.01f;
+
 
         //word
         Image[] bars = { barMon, barTue, barWed, barThu, barFri, barSat, barSun };
@@ -116,15 +149,20 @@ public class InfoController : MonoBehaviour
         int[] words = new int[7];
         int max = 0;
         int maxIndex = 0;
-        words[0] = 5;
-        words[1] = 10;
-        words[2] = 30;
-        words[3] = 10;
-        words[4] = 0;
-        words[5] = 7;
-        words[6] = 0;
 
-        for(int i = 0; i < words.Length; i++)
+        for (int i = 0; i < datasSize; i++)
+        {
+            if (datas[i].date == "31") words[0]++;
+            else if (datas[i].date == "1") words[1]++;
+            else if (datas[i].date == "2") words[2]++;
+            else if (datas[i].date == "3") words[3]++;
+            else if (datas[i].date == "4") words[4]++;
+            else if (datas[i].date == "5") words[5]++;
+            else if (datas[i].date == "6") words[6]++;
+
+        }
+
+        for (int i = 0; i < words.Length; i++)
         {
             if(max < words[i])
             {
@@ -133,7 +171,7 @@ public class InfoController : MonoBehaviour
             }
         }
 
-        wordTotal.text = "88";
+        wordTotal.text = datasSize + "";
         for(int i = 0; i < words.Length; i++)
         {
             bars[i].fillAmount = words[i] / (float)max;
