@@ -43,9 +43,12 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewListen()
     {
-        canvasListen.SetActive(true);
-        canvasSpeek.SetActive(false);
-        canvasCheck.SetActive(false);
+        //canvasListen.SetActive(true);
+        //canvasSpeek.SetActive(false);
+        //canvasCheck.SetActive(false);
+        canvasListen.GetComponent<Canvas>().sortingOrder = 0;
+        canvasSpeek.GetComponent<Canvas>().sortingOrder = -2;
+        canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
     }
 
     public void PlayAudio()
@@ -60,9 +63,12 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewSpeek()
     {
-        canvasListen.SetActive(false);
-        canvasSpeek.SetActive(true);
-        canvasCheck.SetActive(false);
+        //canvasListen.SetActive(false);
+        //canvasSpeek.SetActive(true);
+        //canvasCheck.SetActive(false);
+        canvasListen.GetComponent<Canvas>().sortingOrder = -2;
+        canvasSpeek.GetComponent<Canvas>().sortingOrder = 0;
+        canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
     }
 
     //RecordController.cs 구현
