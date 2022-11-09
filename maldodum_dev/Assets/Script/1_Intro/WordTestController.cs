@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class WordTestController : MonoBehaviour
 {
@@ -43,9 +44,6 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewListen()
     {
-        //canvasListen.SetActive(true);
-        //canvasSpeek.SetActive(false);
-        //canvasCheck.SetActive(false);
         canvasListen.GetComponent<Canvas>().sortingOrder = 0;
         canvasSpeek.GetComponent<Canvas>().sortingOrder = -2;
         canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
@@ -63,9 +61,6 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewSpeek()
     {
-        //canvasListen.SetActive(false);
-        //canvasSpeek.SetActive(true);
-        //canvasCheck.SetActive(false);
         canvasListen.GetComponent<Canvas>().sortingOrder = -2;
         canvasSpeek.GetComponent<Canvas>().sortingOrder = 0;
         canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
@@ -108,7 +103,16 @@ public class WordTestController : MonoBehaviour
         Debug.Log("wordCount: " + (wordTextTotalCount + count));
     }
 
-
-
+    public void moveSceneCheck()
+    {
+        int prefMonth = PlayerPrefs.GetInt("age");
+        if (PlayerPrefs.GetInt("age") < 48)
+        {
+            SceneManager.LoadScene("1.11_introTutorial");
+        } else
+        {
+            SceneManager.LoadScene("1.10_wordTest9");
+        }
+    }
 
 }

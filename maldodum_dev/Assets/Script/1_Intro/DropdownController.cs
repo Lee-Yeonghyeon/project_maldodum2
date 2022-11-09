@@ -107,6 +107,10 @@ public class DropdownController : MonoBehaviour
         name = nameInput.text;
         Debug.Log(name);
         PlayerPrefs.SetString("name", name);
+
+        int prefYear = PlayerPrefs.GetInt("year");
+        int prefMonth = PlayerPrefs.GetInt("month");
+        PlayerPrefs.SetInt("age", ((2022 * 12 + 11) - (prefYear * 12 + prefMonth)));
     }
 }
 

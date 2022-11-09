@@ -99,9 +99,28 @@ public class InfoController : MonoBehaviour
 
 
         //profile
-        name.text = "박돋움";
-        age.text = "만 3세 (38개월)";
-        string level = "spout";
+        name.text = PlayerPrefs.GetString("name");      //이름
+
+        int prefMonth = PlayerPrefs.GetInt("age");      //나이
+        string result = "만 " + prefMonth / 12 + "세 (" + prefMonth + "개월)";
+        age.text = result;
+
+        float avgScore = 0;                             //단계
+        string level = "seed";
+        int totalWordCount = PlayerPrefs.GetInt("wordCount");
+        if (prefMonth < 48)
+        {
+            avgScore = totalWordCount / 44.0f * 100;
+            if(avgScore < 80.9f) { level = "seed";
+                Debug.Log("2세 씨앗");
+            }
+            else { level = "spout"; Debug.Log("2세 새싹"); }
+        } else
+        {
+            avgScore = totalWordCount / 52.0f * 100;
+            if(avgScore < 94.4f) { level = "seed"; Debug.Log("3세 씨앗"); }
+            else { level = "spout"; Debug.Log("2세 새싹"); }
+        }
 
         if (level.Equals("seed"))
         {
@@ -127,6 +146,7 @@ public class InfoController : MonoBehaviour
                 todayCount++;
             }
         }
+        if (todayCount == 0) todayCount = 1;
 
         accuracyTotal.text = accuTotalAccuracy / datasSize + "";
         weekly.fillAmount = (accuTotalAccuracy / datasSize) * 0.01f;

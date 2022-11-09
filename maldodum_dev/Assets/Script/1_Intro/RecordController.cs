@@ -74,9 +74,6 @@ public class RecordController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     private void ViewCheck()
     {
-        //canvasListen.SetActive(false);
-        //canvasSpeek.SetActive(false);
-        //canvasCheck.SetActive(true);
         canvasListen.GetComponent<Canvas>().sortingOrder = -2;
         canvasSpeek.GetComponent<Canvas>().sortingOrder = -2;
         canvasCheck.GetComponent<Canvas>().sortingOrder = 0;
