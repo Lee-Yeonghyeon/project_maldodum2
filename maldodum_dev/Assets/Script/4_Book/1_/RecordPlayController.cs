@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RecordPlayController : MonoBehaviour
 {
-    public string answer;
 
     private AudioSource audioSource;
 
