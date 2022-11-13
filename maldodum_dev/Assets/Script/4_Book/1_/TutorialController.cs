@@ -10,8 +10,12 @@ public class TutorialController : MonoBehaviour
     public bool playOnAwake;
     bool active = true;
 
+    private AudioSource question;
+
     void Start()
     {
+        question = GameObject.Find("4_1_2_1 1p_질문").GetComponent<AudioSource>();
+
         if (!playOnAwake)
         {
             videoCanvas.SetActive(false);
@@ -26,6 +30,12 @@ public class TutorialController : MonoBehaviour
         {
             videoCanvas.SetActive(false);
             active = false;
+        }
+
+        if(video.isPaused && playOnAwake)
+        {
+            question.Play();
+            playOnAwake = false;
         }
     }
 
