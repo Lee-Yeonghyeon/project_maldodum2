@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Page1_Interaction : MonoBehaviour
 {
+    private GameObject interaction;
     private GameObject findMark1;
     private GameObject findMark2;
 
     void Start()
     {
+        interaction = GameObject.Find("Interaction");
         findMark1 = GameObject.Find("1_7 동그라미1");
         findMark2 = GameObject.Find("1_7 동그라미2");
 
+        interaction.SetActive(false);
         findMark1.SetActive(false);
         findMark2.SetActive(false);
+
+        Invoke("InteractionView", 4.0f);
     }
 
     void Update()
@@ -41,5 +46,10 @@ public class Page1_Interaction : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void InteractionView()
+    {
+        interaction.SetActive(true);
     }
 }

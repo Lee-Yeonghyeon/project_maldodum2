@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class RecordSaveController : MonoBehaviour
 {
     public string answer;
+    public int num;
     public string correctSceneName;
     public string wrongSceneName;
     public AudioSource practiceAudio;
@@ -14,6 +15,7 @@ public class RecordSaveController : MonoBehaviour
     private GameObject feedbackCanvas;
     private AudioSource successAudio;
     private AudioSource feedbackAudio;
+    private AudioSource loadAudio;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class RecordSaveController : MonoBehaviour
         feedbackCanvas = GameObject.Find("FeedBack");
         successAudio = successCanvas.GetComponent<AudioSource>();
         feedbackAudio = feedbackCanvas.GetComponent<AudioSource>();
-
+        loadAudio = GameObject.Find("4_0_11 배경").GetComponent<AudioSource>();
 
         successCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -33,11 +35,19 @@ public class RecordSaveController : MonoBehaviour
 
         if (answer.Equals(sttResult))
         {
-            StartCoroutine(waitSuccess(2.0f));
+            StartCoroutine(waitSuccess(2.5f));
         }
         else
         {
-            StartCoroutine(waitFeedback(2.0f));
+            if (num == 1)
+            {
+                StartCoroutine(waitFeedback1(2.5f));
+            }
+            else
+            {
+                StartCoroutine(waitFeedback2(2.5f));
+            }
+
         }
     }
 
@@ -51,13 +61,35 @@ public class RecordSaveController : MonoBehaviour
         SceneManager.LoadScene(correctSceneName);
     }
 
-    IEnumerator waitFeedback(float seconds)
+    IEnumerator waitFeedback1(float seconds)
     {
         feedbackCanvas.SetActive(true);
         practiceAudio.Play();
         yield return new WaitForSeconds(seconds);
+        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
+        loadAudio.Play();
+        yield return new WaitForSeconds(2.2f);
         feedbackAudio.Play();
-        yield return new WaitForSeconds(6.2f);
+        yield return new WaitForSeconds(1.3f);
+        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1차재시도") as AudioClip;
+        loadAudio.Play();
+        yield return new WaitForSeconds(3.2f);
+        SceneManager.LoadScene(wrongSceneName);
+    }
+
+    IEnumerator waitFeedback2(float seconds)
+    {
+        feedbackCanvas.SetActive(true);
+        practiceAudio.Play();
+        yield return new WaitForSeconds(seconds);
+        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
+        loadAudio.Play();
+        yield return new WaitForSeconds(2.2f);
+        feedbackAudio.Play();
+        yield return new WaitForSeconds(1.3f);
+        loadAudio.clip = Resources.Load("Feedback/꾸꾸_2차재시도") as AudioClip;
+        loadAudio.Play();
+        yield return new WaitForSeconds(3.2f);
         SceneManager.LoadScene(wrongSceneName);
     }
 }
