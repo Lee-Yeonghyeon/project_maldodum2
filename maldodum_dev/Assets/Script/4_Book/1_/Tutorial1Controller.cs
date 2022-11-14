@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class TutorialController : MonoBehaviour
+public class Tutorial1Controller : MonoBehaviour
 {
     public VideoPlayer video;
     public GameObject videoCanvas;
@@ -14,27 +14,25 @@ public class TutorialController : MonoBehaviour
 
     void Start()
     {
+        question = GameObject.Find("4_1_2_1 1p_질문").GetComponent<AudioSource>();
 
         if (!playOnAwake)
         {
             videoCanvas.SetActive(false);
             active = false;
-        } else
-        {
-            question = GameObject.Find("4_1_2_1 1p_질문").GetComponent<AudioSource>();
         }
     }
 
 
     void Update()
     {
-        if(video.isPaused && active)
+        if (video.isPaused && active)
         {
             videoCanvas.SetActive(false);
             active = false;
         }
 
-        if(video.isPaused && playOnAwake)
+        if (video.isPaused && playOnAwake)
         {
             question.Play();
             playOnAwake = false;
