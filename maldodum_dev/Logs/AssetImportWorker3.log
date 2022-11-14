@@ -15731,3 +15731,1222 @@ Received Import Request.
   artifactKey: Guid(e5331a3a0f77b4031b72d509a0d143ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing  using Guid(e5331a3a0f77b4031b72d509a0d143ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000109 seconds  code(3) message(Unknown asset with GUID 'e5331a3a0f77b4031b72d509a0d143ce')
   ERROR: Unknown asset with GUID 'e5331a3a0f77b4031b72d509a0d143ce'
+========================================================================
+Received Import Request.
+  Time since last request: 599.213987 seconds.
+  path: Assets/Scenes/3_BookSeed/3_Stage1/3.1.2_page1.2.unity
+  artifactKey: Guid(b04a4e7b82f7246458a861006043d9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/3_Stage1/3.1.2_page1.2.unity using Guid(b04a4e7b82f7246458a861006043d9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.171757 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:12:52Z' while content on disk has modification time of '2022-11-13T16:31:26Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:12:52Z' while content on disk has modification time of '2022-11-13T16:31:26Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:35:31.771 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000145f950 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.864 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3867ms)
+		BeginReloadAssembly (562ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (271ms)
+		EndReloadAssembly (3119ms)
+			LoadAssemblies (410ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1001ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (172ms)
+			SetupLoadedEditorAssemblies (928ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (421ms)
+				ProcessInitializeOnLoadAttributes (447ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 299.6 MB.
+System memory in use after: 299.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3310.
+Total: 5.680587 ms (FindLiveObjects: 0.406964 ms CreateObjectMapping: 0.220537 ms MarkObjects: 5.003500 ms  DeleteObjects: 0.048187 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010694 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:36:51.389 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001477720 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.251 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2251ms)
+		BeginReloadAssembly (252ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (1902ms)
+			LoadAssemblies (274ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (638ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (569ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (190ms)
+				ProcessInitializeOnLoadAttributes (349ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 301.8 MB.
+System memory in use after: 302.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3312.
+Total: 5.753500 ms (FindLiveObjects: 0.424608 ms CreateObjectMapping: 0.416625 ms MarkObjects: 4.881396 ms  DeleteObjects: 0.029478 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:39:11.319 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001476df0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  4.601 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4602ms)
+		BeginReloadAssembly (313ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (115ms)
+		EndReloadAssembly (4116ms)
+			LoadAssemblies (391ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1181ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (206ms)
+			SetupLoadedEditorAssemblies (1373ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (490ms)
+				ProcessInitializeOnLoadAttributes (804ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 304.1 MB.
+System memory in use after: 304.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3314.
+Total: 12.540334 ms (FindLiveObjects: 0.795035 ms CreateObjectMapping: 0.476338 ms MarkObjects: 11.230541 ms  DeleteObjects: 0.036630 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:41:13.288 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001477c60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.384 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2384ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2085ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (682ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (641ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (245ms)
+				ProcessInitializeOnLoadAttributes (362ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 306.4 MB.
+System memory in use after: 306.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3316.
+Total: 5.710614 ms (FindLiveObjects: 0.437341 ms CreateObjectMapping: 0.252318 ms MarkObjects: 4.985129 ms  DeleteObjects: 0.034307 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002439 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:42:31.889 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001477410 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.325 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2325ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2048ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (652ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (622ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (223ms)
+				ProcessInitializeOnLoadAttributes (365ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.7 MB.
+System memory in use after: 308.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3318.
+Total: 5.870718 ms (FindLiveObjects: 0.323150 ms CreateObjectMapping: 0.194848 ms MarkObjects: 5.319214 ms  DeleteObjects: 0.032057 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 534.276473 seconds.
+  path: 
+  artifactKey: Guid(9f020b8a0104b47f0b668b81446abc98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9f020b8a0104b47f0b668b81446abc98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000211 seconds  code(3) message(Unknown asset with GUID '9f020b8a0104b47f0b668b81446abc98')
+  ERROR: Unknown asset with GUID '9f020b8a0104b47f0b668b81446abc98'
+========================================================================
+Received Import Request.
+  Time since last request: 0.002053 seconds.
+  path: 
+  artifactKey: Guid(87ab7f68d638e409aa76b9cb6f2ec79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(87ab7f68d638e409aa76b9cb6f2ec79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000177 seconds  code(3) message(Unknown asset with GUID '87ab7f68d638e409aa76b9cb6f2ec79a')
+  ERROR: Unknown asset with GUID '87ab7f68d638e409aa76b9cb6f2ec79a'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: 
+  artifactKey: Guid(ec0d9f7564eaf4478b9c86f9d2a48c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(ec0d9f7564eaf4478b9c86f9d2a48c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000103 seconds  code(3) message(Unknown asset with GUID 'ec0d9f7564eaf4478b9c86f9d2a48c6f')
+  ERROR: Unknown asset with GUID 'ec0d9f7564eaf4478b9c86f9d2a48c6f'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: 
+  artifactKey: Guid(1666eeab90a2c459a83565ac82ad221a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(1666eeab90a2c459a83565ac82ad221a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000092 seconds  code(3) message(Unknown asset with GUID '1666eeab90a2c459a83565ac82ad221a')
+  ERROR: Unknown asset with GUID '1666eeab90a2c459a83565ac82ad221a'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: 
+  artifactKey: Guid(ee5331373748f4fcf96e4d65f9f98d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(ee5331373748f4fcf96e4d65f9f98d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000086 seconds  code(3) message(Unknown asset with GUID 'ee5331373748f4fcf96e4d65f9f98d91')
+  ERROR: Unknown asset with GUID 'ee5331373748f4fcf96e4d65f9f98d91'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000564 seconds.
+  path: 
+  artifactKey: Guid(58ddcd678da3a4f88915cb41165f4222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(58ddcd678da3a4f88915cb41165f4222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000123 seconds  code(3) message(Unknown asset with GUID '58ddcd678da3a4f88915cb41165f4222')
+  ERROR: Unknown asset with GUID '58ddcd678da3a4f88915cb41165f4222'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014952 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:44:40.341 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000147da40 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  4.204 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4205ms)
+		BeginReloadAssembly (494ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (3525ms)
+			LoadAssemblies (532ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1015ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (177ms)
+			SetupLoadedEditorAssemblies (1128ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (418ms)
+				ProcessInitializeOnLoadAttributes (646ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 311.0 MB.
+System memory in use after: 311.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3320.
+Total: 9.575186 ms (FindLiveObjects: 0.644927 ms CreateObjectMapping: 0.776204 ms MarkObjects: 8.114225 ms  DeleteObjects: 0.038031 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 111.875301 seconds.
+  path: Assets/Scenes/3_BookSeed/3_Stage1/3.1.2_page1.2.unity
+  artifactKey: Guid(b04a4e7b82f7246458a861006043d9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/3_Stage1/3.1.2_page1.2.unity using Guid(b04a4e7b82f7246458a861006043d9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.017591 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:12:52Z' while content on disk has modification time of '2022-11-13T16:31:26Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:12:52Z' while content on disk has modification time of '2022-11-13T16:31:26Z'
+========================================================================
+Received Import Request.
+  Time since last request: 9.438630 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity
+  artifactKey: Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity using Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001081 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z'
+========================================================================
+Received Import Request.
+  Time since last request: 9.965340 seconds.
+  path: Assets/Scenes/3_BookSeed/3_Stage1/3.1.3_page1.3.unity
+  artifactKey: Guid(36fd62f38ca3b4e018e98ae6726e4f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/3_Stage1/3.1.3_page1.3.unity using Guid(36fd62f38ca3b4e018e98ae6726e4f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000993 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:18:47Z' while content on disk has modification time of '2022-11-14T11:46:02Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/3_stage1/3.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:18:47Z' while content on disk has modification time of '2022-11-14T11:46:02Z'
+========================================================================
+Received Import Request.
+  Time since last request: 61.319334 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity
+  artifactKey: Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity using Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000763 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z'
+========================================================================
+Received Import Request.
+  Time since last request: 4.208656 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity
+  artifactKey: Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity using Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000916 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:45:56Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:45:56Z'
+========================================================================
+Received Import Request.
+  Time since last request: 4.481942 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity
+  artifactKey: Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity using Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000948 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z'
+========================================================================
+Received Import Request.
+  Time since last request: 3.443395 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity
+  artifactKey: Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity using Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000803 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:46:12Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:46:12Z'
+========================================================================
+Received Import Request.
+  Time since last request: 36.850704 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity
+  artifactKey: Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity using Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000767 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z'
+========================================================================
+Received Import Request.
+  Time since last request: 2.969594 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity
+  artifactKey: Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity using Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000846 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:46:51Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:46:51Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007137 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:48:24.240 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001470700 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.356 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2357ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (2061ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (628ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (645ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (249ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 313.3 MB.
+System memory in use after: 313.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3322.
+Total: 6.323117 ms (FindLiveObjects: 0.334765 ms CreateObjectMapping: 0.213163 ms MarkObjects: 5.738085 ms  DeleteObjects: 0.035650 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011721 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:50:19.789 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000144e290 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.206 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2206ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1926ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (578ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (610ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (223ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 315.5 MB.
+System memory in use after: 315.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3324.
+Total: 5.627112 ms (FindLiveObjects: 0.476145 ms CreateObjectMapping: 0.194494 ms MarkObjects: 4.895065 ms  DeleteObjects: 0.060112 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 226.879794 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity
+  artifactKey: Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity using Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.015347 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002227 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:50:55.752 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000144ed10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.089 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2089ms)
+		BeginReloadAssembly (245ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1758ms)
+			LoadAssemblies (277ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (519ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (185ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 317.8 MB.
+System memory in use after: 318.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3326.
+Total: 5.845966 ms (FindLiveObjects: 0.440258 ms CreateObjectMapping: 0.306073 ms MarkObjects: 5.061574 ms  DeleteObjects: 0.036068 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13.823074 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000089 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 2.473729 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000187 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 9.240529 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000109 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 3.895872 seconds.
+  path: 
+  artifactKey: Guid(3551c8fc6d20e4654b2dfca612d3acb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(3551c8fc6d20e4654b2dfca612d3acb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000093 seconds  code(3) message(Unknown asset with GUID '3551c8fc6d20e4654b2dfca612d3acb7')
+  ERROR: Unknown asset with GUID '3551c8fc6d20e4654b2dfca612d3acb7'
+========================================================================
+Received Import Request.
+  Time since last request: 8.838533 seconds.
+  path: 
+  artifactKey: Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000099 seconds  code(3) message(Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d')
+  ERROR: Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d'
+========================================================================
+Received Import Request.
+  Time since last request: 7.947347 seconds.
+  path: 
+  artifactKey: Guid(1116eb86e4a7f465e9917c3e8f00e92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(1116eb86e4a7f465e9917c3e8f00e92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000102 seconds  code(3) message(Unknown asset with GUID '1116eb86e4a7f465e9917c3e8f00e92a')
+  ERROR: Unknown asset with GUID '1116eb86e4a7f465e9917c3e8f00e92a'
+========================================================================
+Received Import Request.
+  Time since last request: 7.819501 seconds.
+  path: 
+  artifactKey: Guid(9454eeee1df974b989b5f558d6b55e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9454eeee1df974b989b5f558d6b55e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000149 seconds  code(3) message(Unknown asset with GUID '9454eeee1df974b989b5f558d6b55e2b')
+  ERROR: Unknown asset with GUID '9454eeee1df974b989b5f558d6b55e2b'
+========================================================================
+Received Import Request.
+  Time since last request: 3.378408 seconds.
+  path: 
+  artifactKey: Guid(e5733902c772c4261812310ce9fa0f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(e5733902c772c4261812310ce9fa0f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000106 seconds  code(3) message(Unknown asset with GUID 'e5733902c772c4261812310ce9fa0f50')
+  ERROR: Unknown asset with GUID 'e5733902c772c4261812310ce9fa0f50'
+========================================================================
+Received Import Request.
+  Time since last request: 8.580315 seconds.
+  path: 
+  artifactKey: Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000159 seconds  code(3) message(Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc')
+  ERROR: Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc'
+========================================================================
+Received Import Request.
+  Time since last request: 7.619998 seconds.
+  path: 
+  artifactKey: Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000134 seconds  code(3) message(Unknown asset with GUID '60a5ff746c1464116b7273bfad896298')
+  ERROR: Unknown asset with GUID '60a5ff746c1464116b7273bfad896298'
+========================================================================
+Received Import Request.
+  Time since last request: 8.066122 seconds.
+  path: 
+  artifactKey: Guid(70772e44d2a3f4b6ca399636d69bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(70772e44d2a3f4b6ca399636d69bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000150 seconds  code(3) message(Unknown asset with GUID '70772e44d2a3f4b6ca399636d69bcfa4')
+  ERROR: Unknown asset with GUID '70772e44d2a3f4b6ca399636d69bcfa4'
+========================================================================
+Received Import Request.
+  Time since last request: 5.444314 seconds.
+  path: 
+  artifactKey: Guid(19771618232da4e7b8f201b5bc09d27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(19771618232da4e7b8f201b5bc09d27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000127 seconds  code(3) message(Unknown asset with GUID '19771618232da4e7b8f201b5bc09d27c')
+  ERROR: Unknown asset with GUID '19771618232da4e7b8f201b5bc09d27c'
+========================================================================
+Received Import Request.
+  Time since last request: 10.626068 seconds.
+  path: 
+  artifactKey: Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000088 seconds  code(3) message(Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b')
+  ERROR: Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b'
+========================================================================
+Received Import Request.
+  Time since last request: 7.717764 seconds.
+  path: 
+  artifactKey: Guid(3c09e4ae2e51d46c39d447e741906273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(3c09e4ae2e51d46c39d447e741906273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000120 seconds  code(3) message(Unknown asset with GUID '3c09e4ae2e51d46c39d447e741906273')
+  ERROR: Unknown asset with GUID '3c09e4ae2e51d46c39d447e741906273'
+========================================================================
+Received Import Request.
+  Time since last request: 9.318983 seconds.
+  path: 
+  artifactKey: Guid(d0471344016224756bc876bb0b3dc6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(d0471344016224756bc876bb0b3dc6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000111 seconds  code(3) message(Unknown asset with GUID 'd0471344016224756bc876bb0b3dc6df')
+  ERROR: Unknown asset with GUID 'd0471344016224756bc876bb0b3dc6df'
+========================================================================
+Received Import Request.
+  Time since last request: 19.306652 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000102 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 12.927634 seconds.
+  path: 
+  artifactKey: Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000118 seconds  code(3) message(Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d')
+  ERROR: Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d'
+========================================================================
+Received Import Request.
+  Time since last request: 22.598095 seconds.
+  path: 
+  artifactKey: Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000201 seconds  code(3) message(Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc')
+  ERROR: Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc'
+========================================================================
+Received Import Request.
+  Time since last request: 3.481355 seconds.
+  path: 
+  artifactKey: Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000156 seconds  code(3) message(Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc')
+  ERROR: Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc'
+========================================================================
+Received Import Request.
+  Time since last request: 11.000198 seconds.
+  path: 
+  artifactKey: Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000135 seconds  code(3) message(Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b')
+  ERROR: Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b'
+========================================================================
+Received Import Request.
+  Time since last request: 12.490473 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity
+  artifactKey: Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.2_page1.2.unity using Guid(71d557924c2d04b49a2dd2d5d59bcbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.019780 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.2_page1.2.unity in SourceAssetDB has modification time of '2022-10-23T15:27:25Z' while content on disk has modification time of '2022-11-14T16:44:34Z'
+========================================================================
+Received Import Request.
+  Time since last request: 6.508834 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000656 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 128.014936 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity
+  artifactKey: Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.3_page1.3.unity using Guid(70a1ab83e4c6f4d319ead054b0836d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000975 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:47:42Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.3_page1.3.unity in SourceAssetDB has modification time of '2022-10-23T15:29:45Z' while content on disk has modification time of '2022-11-14T16:47:42Z'
+========================================================================
+Received Import Request.
+  Time since last request: 6.369999 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000115 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 106.864607 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000173 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 42.613660 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity
+  artifactKey: Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity using Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000892 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z'
+========================================================================
+Received Import Request.
+  Time since last request: 7.318031 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity
+  artifactKey: Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.2.1_page2.1.unity using Guid(28e6a357536ec4d2f8e5fff7e010d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000692 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.2.1_page2.1.unity in SourceAssetDB has modification time of '2022-10-10T09:30:30Z' while content on disk has modification time of '2022-11-14T15:51:42Z'
+========================================================================
+Received Import Request.
+  Time since last request: 15.953514 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000125 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009935 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 01:59:24.440 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000144ea70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.807 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2808ms)
+		BeginReloadAssembly (288ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (2396ms)
+			LoadAssemblies (314ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (645ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (133ms)
+			SetupLoadedEditorAssemblies (774ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (288ms)
+				ProcessInitializeOnLoadAttributes (444ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 319.2 MB.
+System memory in use after: 319.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3328.
+Total: 5.762238 ms (FindLiveObjects: 0.373612 ms CreateObjectMapping: 0.228424 ms MarkObjects: 5.121654 ms  DeleteObjects: 0.036833 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.067759 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000088 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 79.402548 seconds.
+  path: 
+  artifactKey: Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9bc413471b46f47c5bf8ecda739c125d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000149 seconds  code(3) message(Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d')
+  ERROR: Unknown asset with GUID '9bc413471b46f47c5bf8ecda739c125d'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 02:02:32.991 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001441dc0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.556 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3557ms)
+		BeginReloadAssembly (592ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (37ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (185ms)
+		EndReloadAssembly (2738ms)
+			LoadAssemblies (593ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (972ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (704ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (261ms)
+				ProcessInitializeOnLoadAttributes (400ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 321.1 MB.
+System memory in use after: 321.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3330.
+Total: 5.597564 ms (FindLiveObjects: 0.309332 ms CreateObjectMapping: 0.181669 ms MarkObjects: 5.048882 ms  DeleteObjects: 0.056291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 108.762845 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000117 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 6.284527 seconds.
+  path: 
+  artifactKey: Guid(1116eb86e4a7f465e9917c3e8f00e92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(1116eb86e4a7f465e9917c3e8f00e92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000129 seconds  code(3) message(Unknown asset with GUID '1116eb86e4a7f465e9917c3e8f00e92a')
+  ERROR: Unknown asset with GUID '1116eb86e4a7f465e9917c3e8f00e92a'
+========================================================================
+Received Import Request.
+  Time since last request: 89.936875 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000127 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 6.269048 seconds.
+  path: 
+  artifactKey: Guid(9454eeee1df974b989b5f558d6b55e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(9454eeee1df974b989b5f558d6b55e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000085 seconds  code(3) message(Unknown asset with GUID '9454eeee1df974b989b5f558d6b55e2b')
+  ERROR: Unknown asset with GUID '9454eeee1df974b989b5f558d6b55e2b'
+========================================================================
+Received Import Request.
+  Time since last request: 49.971575 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000110 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 9.271198 seconds.
+  path: 
+  artifactKey: Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(6cd6475d7a11b4aadbce53f40778b0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000119 seconds  code(3) message(Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc')
+  ERROR: Unknown asset with GUID '6cd6475d7a11b4aadbce53f40778b0dc'
+========================================================================
+Received Import Request.
+  Time since last request: 96.582806 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000135 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 7.171750 seconds.
+  path: 
+  artifactKey: Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000110 seconds  code(3) message(Unknown asset with GUID '60a5ff746c1464116b7273bfad896298')
+  ERROR: Unknown asset with GUID '60a5ff746c1464116b7273bfad896298'
+========================================================================
+Received Import Request.
+  Time since last request: 92.185005 seconds.
+  path: 
+  artifactKey: Guid(5cb873e7c87714227aa8ab0fe46cc92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(5cb873e7c87714227aa8ab0fe46cc92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000102 seconds  code(3) message(Unknown asset with GUID '5cb873e7c87714227aa8ab0fe46cc92a')
+  ERROR: Unknown asset with GUID '5cb873e7c87714227aa8ab0fe46cc92a'
+========================================================================
+Received Import Request.
+  Time since last request: 1.938267 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000098 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 8.609466 seconds.
+  path: 
+  artifactKey: Guid(70772e44d2a3f4b6ca399636d69bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(70772e44d2a3f4b6ca399636d69bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000097 seconds  code(3) message(Unknown asset with GUID '70772e44d2a3f4b6ca399636d69bcfa4')
+  ERROR: Unknown asset with GUID '70772e44d2a3f4b6ca399636d69bcfa4'
+========================================================================
+Received Import Request.
+  Time since last request: 63.024535 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000120 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 7.491010 seconds.
+  path: 
+  artifactKey: Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2bf2e42f5022d4494bff9573198cd91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000134 seconds  code(3) message(Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b')
+  ERROR: Unknown asset with GUID '2bf2e42f5022d4494bff9573198cd91b'
+========================================================================
+Received Import Request.
+  Time since last request: 81.223628 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000151 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 5.933275 seconds.
+  path: 
+  artifactKey: Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60a5ff746c1464116b7273bfad896298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000112 seconds  code(3) message(Unknown asset with GUID '60a5ff746c1464116b7273bfad896298')
+  ERROR: Unknown asset with GUID '60a5ff746c1464116b7273bfad896298'
+========================================================================
+Received Import Request.
+  Time since last request: 3.919434 seconds.
+  path: 
+  artifactKey: Guid(3c09e4ae2e51d46c39d447e741906273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(3c09e4ae2e51d46c39d447e741906273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000097 seconds  code(3) message(Unknown asset with GUID '3c09e4ae2e51d46c39d447e741906273')
+  ERROR: Unknown asset with GUID '3c09e4ae2e51d46c39d447e741906273'
+========================================================================
+Received Import Request.
+  Time since last request: 70.405899 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000151 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 6.782280 seconds.
+  path: 
+  artifactKey: Guid(d0471344016224756bc876bb0b3dc6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(d0471344016224756bc876bb0b3dc6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000096 seconds  code(3) message(Unknown asset with GUID 'd0471344016224756bc876bb0b3dc6df')
+  ERROR: Unknown asset with GUID 'd0471344016224756bc876bb0b3dc6df'
+========================================================================
+Received Import Request.
+  Time since last request: 58.767686 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.1_page1.1.unity
+  artifactKey: Guid(c7c0c00507eba4e54827ab2c2c68a3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.1_page1.1.unity using Guid(c7c0c00507eba4e54827ab2c2c68a3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.021672 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.1_page1.1.unity in SourceAssetDB has modification time of '2022-10-10T09:27:26Z' while content on disk has modification time of '2022-11-14T15:45:48Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.1_page1.1.unity in SourceAssetDB has modification time of '2022-10-10T09:27:26Z' while content on disk has modification time of '2022-11-14T15:45:48Z'
+========================================================================
+Received Import Request.
+  Time since last request: 7.208793 seconds.
+  path: Assets/Scenes/3_BookSeed/4_Stage2/4.1.1_page1.1.unity
+  artifactKey: Guid(c7c0c00507eba4e54827ab2c2c68a3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3_BookSeed/4_Stage2/4.1.1_page1.1.unity using Guid(c7c0c00507eba4e54827ab2c2c68a3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000747 seconds  code(4) message(Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.1_page1.1.unity in SourceAssetDB has modification time of '2022-10-10T09:27:26Z' while content on disk has modification time of '2022-11-14T15:45:48Z')
+  ERROR: Build asset version error: assets/scenes/3_bookseed/4_stage2/4.1.1_page1.1.unity in SourceAssetDB has modification time of '2022-10-10T09:27:26Z' while content on disk has modification time of '2022-11-14T15:45:48Z'
+========================================================================
+Received Import Request.
+  Time since last request: 139.214121 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000213 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008510 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-11-15 02:16:26.323 Unity[28111:1781054] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001458e00 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.360 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3363ms)
+		BeginReloadAssembly (480ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (211ms)
+		EndReloadAssembly (2760ms)
+			LoadAssemblies (377ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (837ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (873ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (287ms)
+				ProcessInitializeOnLoadAttributes (523ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 320.9 MB.
+System memory in use after: 321.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3332.
+Total: 6.921908 ms (FindLiveObjects: 0.484120 ms CreateObjectMapping: 0.435102 ms MarkObjects: 5.942699 ms  DeleteObjects: 0.058113 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.995062 seconds.
+  path: 
+  artifactKey: Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7565475078b684ba2b98aa7f7171cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000096 seconds  code(3) message(Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4')
+  ERROR: Unknown asset with GUID '7565475078b684ba2b98aa7f7171cbf4'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: 
+  artifactKey: Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(df8139db085d14e1f9677a427b2ee5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000124 seconds  code(3) message(Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf')
+  ERROR: Unknown asset with GUID 'df8139db085d14e1f9677a427b2ee5cf'
+========================================================================
+Received Import Request.
+  Time since last request: 0.109067 seconds.
+  path: 
+  artifactKey: Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(0778fb2b2f6234c15aa6e0f13c215398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000089 seconds  code(3) message(Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398')
+  ERROR: Unknown asset with GUID '0778fb2b2f6234c15aa6e0f13c215398'
+========================================================================
+Received Import Request.
+  Time since last request: 0.467401 seconds.
+  path: 
+  artifactKey: Guid(245f37542eda34927a0caf144b988548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(245f37542eda34927a0caf144b988548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000113 seconds  code(3) message(Unknown asset with GUID '245f37542eda34927a0caf144b988548')
+  ERROR: Unknown asset with GUID '245f37542eda34927a0caf144b988548'
+========================================================================
+Received Import Request.
+  Time since last request: 7.973389 seconds.
+  path: 
+  artifactKey: Guid(245f37542eda34927a0caf144b988548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(245f37542eda34927a0caf144b988548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000097 seconds  code(3) message(Unknown asset with GUID '245f37542eda34927a0caf144b988548')
+  ERROR: Unknown asset with GUID '245f37542eda34927a0caf144b988548'
