@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System;
 using UnityEngine;
 
 
@@ -34,7 +35,7 @@ public class InsertInfo : MonoBehaviour
         Data data1 = new Data();
         data1.word = "병아리";
         data1.accuracy = 100;
-        data1.date = "31";
+        data1.date = DateTime.Now.ToString("dd");
 
         //data 추가
         string info = File.ReadAllText(Application.dataPath + "/InfoData.json");

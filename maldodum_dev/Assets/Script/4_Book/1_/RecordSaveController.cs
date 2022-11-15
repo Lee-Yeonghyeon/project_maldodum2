@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,10 +37,12 @@ public class RecordSaveController : MonoBehaviour
 
         if (answer.Equals(sttResult))
         {
+            InsertData(100);
             StartCoroutine(waitSuccess(2.5f));
         }
         else
         {
+            InsertData(0);
             if (num == 1)
             {
                 StartCoroutine(waitFeedback1(2.5f));
@@ -49,6 +53,23 @@ public class RecordSaveController : MonoBehaviour
             }
 
         }
+    }
+
+    private void InsertData(int result)
+    {
+        //data 생성
+        Data data1 = new Data();
+        data1.word = answer;
+        data1.accuracy = result;
+        data1.date = DateTime.Now.ToString("dd");
+
+        //data 추가
+        string info = File.ReadAllText(Application.dataPath + "/InfoData.json");
+        BodyData body = JsonUtility.FromJson<BodyData>(info);
+        body.body.Add(data1);
+
+        //data 저장
+        File.WriteAllText(Application.dataPath + "/InfoData.json", JsonUtility.ToJson(body, true));
     }
 
     IEnumerator waitSuccess(float seconds)
