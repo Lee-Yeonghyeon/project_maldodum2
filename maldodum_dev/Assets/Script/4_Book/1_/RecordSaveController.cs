@@ -19,6 +19,12 @@ public class RecordSaveController : MonoBehaviour
     private AudioSource feedbackAudio;
     private AudioSource loadAudio;
 
+    private string charName;
+    private GameObject dodo_s;
+    private GameObject titi_s;
+    private GameObject dodo_f;
+    private GameObject titi_f;
+
     private void Start()
     {
         successCanvas = GameObject.Find("Success");
@@ -26,6 +32,12 @@ public class RecordSaveController : MonoBehaviour
         successAudio = successCanvas.GetComponent<AudioSource>();
         feedbackAudio = feedbackCanvas.GetComponent<AudioSource>();
         loadAudio = GameObject.Find("4_0_11 배경").GetComponent<AudioSource>();
+        dodo_s = GameObject.Find("Character_DoDo_s");
+        titi_s = GameObject.Find("Character_TiTi_s");
+        dodo_f = GameObject.Find("Character_DoDo_f");
+        titi_f = GameObject.Find("Character_TiTi_f");
+
+        charName = PlayerPrefs.GetString("char");
 
         successCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -75,6 +87,15 @@ public class RecordSaveController : MonoBehaviour
     IEnumerator waitSuccess(float seconds)
     {
         successCanvas.SetActive(true);
+        if (charName.Equals("dodo") || charName.Equals(""))
+        {
+            dodo_s.SetActive(true);
+            titi_s.SetActive(false);
+        } else
+        {
+            dodo_s.SetActive(false);
+            titi_s.SetActive(true);
+        }
         practiceAudio.Play();
         yield return new WaitForSeconds(seconds);
         successAudio.Play();
@@ -85,6 +106,16 @@ public class RecordSaveController : MonoBehaviour
     IEnumerator waitFeedback1(float seconds)
     {
         feedbackCanvas.SetActive(true);
+        if (charName.Equals("dodo") || charName.Equals(""))
+        {
+            dodo_f.SetActive(true);
+            titi_f.SetActive(false);
+        }
+        else
+        {
+            dodo_f.SetActive(false);
+            titi_f.SetActive(true);
+        }
         practiceAudio.Play();
         yield return new WaitForSeconds(seconds);
         loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
@@ -101,6 +132,16 @@ public class RecordSaveController : MonoBehaviour
     IEnumerator waitFeedback2(float seconds)
     {
         feedbackCanvas.SetActive(true);
+        if (charName.Equals("dodo") || charName.Equals(""))
+        {
+            dodo_f.SetActive(true);
+            titi_f.SetActive(false);
+        }
+        else
+        {
+            dodo_f.SetActive(false);
+            titi_f.SetActive(true);
+        }
         practiceAudio.Play();
         yield return new WaitForSeconds(seconds);
         loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
