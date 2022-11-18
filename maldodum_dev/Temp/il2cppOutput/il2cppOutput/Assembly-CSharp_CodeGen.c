@@ -38,10 +38,10 @@ extern void IntroTutorialController_Update_mB9B2CF5BF997B2CA06B2731728F61D4D38B7
 extern void IntroTutorialController__ctor_m4C3EC89C2B56F61A1DF68038EF80E1149852E838 (void);
 // 0x0000000D System.Void RecordController::Start()
 extern void RecordController_Start_mF30A2BD88630F452B51695CB8182574675F91A49 (void);
-// 0x0000000E System.Void RecordController::OnPointerDown(UnityEngine.EventSystems.PointerEventData)
-extern void RecordController_OnPointerDown_m5BE6C778FE44F3735E0DD1423B9C464B0DF753F1 (void);
-// 0x0000000F System.Void RecordController::OnPointerUp(UnityEngine.EventSystems.PointerEventData)
-extern void RecordController_OnPointerUp_m97719481EA7EE3A9D22B88D7D945CAEF19F3298B (void);
+// 0x0000000E System.Void RecordController::OnMouseDown()
+extern void RecordController_OnMouseDown_m067828E4822D19E4C716851118370F851DBD8F0A (void);
+// 0x0000000F System.Void RecordController::OnMouseUp()
+extern void RecordController_OnMouseUp_mE96E426A000B00638AFA165D1799DD075CA05472 (void);
 // 0x00000010 System.Void RecordController::ViewCheck()
 extern void RecordController_ViewCheck_mCE03284D62EFF4D927A2240602848E4D40E391DC (void);
 // 0x00000011 System.Void RecordController::.ctor()
@@ -292,10 +292,10 @@ extern void SpeechToText_stopRecording_m596BF800BBDE228F46E507B22352A44D65342D0E
 extern void SpeechToText_getByteFromAudioClip_m0CCA804886E1DA20AEC88AF664558756FBC3ADC0 (void);
 // 0x0000008C System.Collections.IEnumerator SpeechToText::PostVoice(System.String,System.Byte[])
 extern void SpeechToText_PostVoice_m2A7B54DC7A3D653F6EDBF8FCBCAF810494C2B585 (void);
-// 0x0000008D System.Void SpeechToText::OnPointerDown(UnityEngine.EventSystems.PointerEventData)
-extern void SpeechToText_OnPointerDown_mF3421A0690AD98A345A5DF35DDE2660DD966165B (void);
-// 0x0000008E System.Void SpeechToText::OnPointerUp(UnityEngine.EventSystems.PointerEventData)
-extern void SpeechToText_OnPointerUp_m777B3C4F556BBA548FD0533356F574CA382B138F (void);
+// 0x0000008D System.Void SpeechToText::OnMouseDown()
+extern void SpeechToText_OnMouseDown_mF6C78B246FC544F4C73E6018AC7C3A19933227F5 (void);
+// 0x0000008E System.Void SpeechToText::OnMouseUp()
+extern void SpeechToText_OnMouseUp_mD153DFFA361FC537E43D2EE6C0A031590B61AEFA (void);
 // 0x0000008F System.Void SpeechToText::ChangeBtn()
 extern void SpeechToText_ChangeBtn_m8EA2D523F2CF4DD7590DE1E74E88E40DFACE7595 (void);
 // 0x00000090 System.Int32 SpeechToText::WriteFileHeader(System.IO.MemoryStream&,System.Int32)
@@ -623,8 +623,8 @@ static Il2CppMethodPointer s_methodPointers[298] =
 	IntroTutorialController_Update_mB9B2CF5BF997B2CA06B2731728F61D4D38B7A6C9,
 	IntroTutorialController__ctor_m4C3EC89C2B56F61A1DF68038EF80E1149852E838,
 	RecordController_Start_mF30A2BD88630F452B51695CB8182574675F91A49,
-	RecordController_OnPointerDown_m5BE6C778FE44F3735E0DD1423B9C464B0DF753F1,
-	RecordController_OnPointerUp_m97719481EA7EE3A9D22B88D7D945CAEF19F3298B,
+	RecordController_OnMouseDown_m067828E4822D19E4C716851118370F851DBD8F0A,
+	RecordController_OnMouseUp_mE96E426A000B00638AFA165D1799DD075CA05472,
 	RecordController_ViewCheck_mCE03284D62EFF4D927A2240602848E4D40E391DC,
 	RecordController__ctor_m2E2E9AC0F8BB5C150E4501F2C85F82C56058D322,
 	WordTestController_Start_mD21EDFE32C7E44D26F20A19F0E00696FB976AA10,
@@ -750,8 +750,8 @@ static Il2CppMethodPointer s_methodPointers[298] =
 	SpeechToText_stopRecording_m596BF800BBDE228F46E507B22352A44D65342D0E,
 	SpeechToText_getByteFromAudioClip_m0CCA804886E1DA20AEC88AF664558756FBC3ADC0,
 	SpeechToText_PostVoice_m2A7B54DC7A3D653F6EDBF8FCBCAF810494C2B585,
-	SpeechToText_OnPointerDown_mF3421A0690AD98A345A5DF35DDE2660DD966165B,
-	SpeechToText_OnPointerUp_m777B3C4F556BBA548FD0533356F574CA382B138F,
+	SpeechToText_OnMouseDown_mF6C78B246FC544F4C73E6018AC7C3A19933227F5,
+	SpeechToText_OnMouseUp_mD153DFFA361FC537E43D2EE6C0A031590B61AEFA,
 	SpeechToText_ChangeBtn_m8EA2D523F2CF4DD7590DE1E74E88E40DFACE7595,
 	SpeechToText_WriteFileHeader_mAFD56A1A012FAC6CAEFF18AB6BF3378A5A80FCC5,
 	SpeechToText_WriteFileFormat_mA60D93A501CF3A138EEAF4C5094747AF42DDEFC8,
@@ -924,8 +924,8 @@ static const int32_t s_InvokerIndices[298] =
 	1503,
 	1503,
 	1503,
-	1283,
-	1283,
+	1503,
+	1503,
 	1503,
 	1503,
 	1503,
@@ -1051,8 +1051,8 @@ static const int32_t s_InvokerIndices[298] =
 	1503,
 	1045,
 	649,
-	1283,
-	1283,
+	1503,
+	1503,
 	1503,
 	2049,
 	1710,

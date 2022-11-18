@@ -9,7 +9,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class SpeechToText : MonoBehaviour
 {
 	private string _microphoneID = null;
 	private int _recordingLengthSec = 3;
@@ -36,19 +36,19 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 	// 버튼을 OnPointerDown 할 때 호출
 	public void startRecording()
 	{
-		string fileCheck = @"/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer + ".wav";
+		//string fileCheck = Application.persistentDataPath + "/Assets/Resources/" + answer + ".wav";
 
-		if (File.Exists(fileCheck))
-		{
-			try
-			{
-				File.Delete(fileCheck);
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine("The deletion failed: {0}", e.Message);
-			}
-		}
+		//if (File.Exists(fileCheck))
+		//{
+		//	try
+		//	{
+		//		File.Delete(fileCheck);
+		//	}
+		//	catch (Exception e)
+		//	{
+		//		Console.WriteLine("The deletion failed: {0}", e.Message);
+		//	}
+		//}
 
 		Debug.Log("start recording");
 		audioSource.clip = Microphone.Start(_microphoneID, false, _recordingLengthSec, _recordingHZ);
@@ -69,8 +69,8 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 				return;
 			}
 
-			// 녹음된 audioclip을 local에 저
-			SavWav.Save("/Users/swumac/Desktop/project_maldodum/maldodum_dev/Assets/Resources/" + answer, audioSource.clip);
+			// 녹음된 audioclip을 local에 저장
+			//SavWav.Save(Application.persistentDataPath + "/Assets/Resources/" + answer, audioSource.clip);
 
 			//audio clip to byte array
 			byte[] byteData = getByteFromAudioClip(audioSource.clip);
@@ -137,7 +137,7 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 			VoiceRecognize voiceRecognize = JsonUtility.FromJson<VoiceRecognize>(message);
 
 			PlayerPrefs.SetString("sttResult", voiceRecognize.text);
-			Debug.Log("Voice Server responded: " + voiceRecognize.text);
+            Debug.Log("Voice Server responded: " + voiceRecognize.text);
 
 			btnReplay.interactable = true;
 			btnSave.interactable = true;
@@ -145,13 +145,13 @@ public class SpeechToText : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 		}
 	}
 
-	public void OnPointerDown(PointerEventData eventData)
+	public void OnMouseDown()
 	{
 		startRecording();
 		ChangeBtn();
 	}
 
-	public void OnPointerUp(PointerEventData eventData)
+	public void OnMouseUp()
 	{
 		stopRecording();
 		ChangeBtn();

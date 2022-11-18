@@ -38,12 +38,12 @@ public class InsertInfo : MonoBehaviour
         data1.date = DateTime.Now.ToString("dd");
 
         //data 추가
-        string info = File.ReadAllText(Application.dataPath + "/InfoData.json");
+        string info = File.ReadAllText(Application.persistentDataPath + "/InfoData.json");
         BodyData body = JsonUtility.FromJson<BodyData>(info);
         body.body.Add(data1);
 
         //data 저장
-        File.WriteAllText(Application.dataPath + "/InfoData.json", JsonUtility.ToJson(body, true));
+        File.WriteAllText(Application.persistentDataPath + "/InfoData.json", JsonUtility.ToJson(body, true));
     }
 
     void Start()

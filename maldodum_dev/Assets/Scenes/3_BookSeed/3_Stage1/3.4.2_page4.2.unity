@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 653762366}
   - component: {fileID: 653762365}
   - component: {fileID: 653762364}
+  - component: {fileID: 653762368}
   m_Layer: 5
   m_Name: "4_0_16 \uBC84\uD2BC_\uB179\uC74C\uD558\uAE30"
   m_TagString: Untagged
@@ -529,6 +530,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653762362}
   m_CullTransparentMesh: 1
+--- !u!61 &653762368
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653762362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 250, y: 250}
+  m_EdgeRadius: 0
 --- !u!1 &686886914
 GameObject:
   m_ObjectHideFlags: 0

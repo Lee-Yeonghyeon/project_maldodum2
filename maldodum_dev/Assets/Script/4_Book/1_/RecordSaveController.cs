@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class RecordSaveController : MonoBehaviour
@@ -75,13 +76,26 @@ public class RecordSaveController : MonoBehaviour
         data1.accuracy = result;
         data1.date = DateTime.Now.ToString("dd");
 
-        //data 추가
-        string info = File.ReadAllText(Application.dataPath + "/InfoData.json");
-        BodyData body = JsonUtility.FromJson<BodyData>(info);
-        body.body.Add(data1);
+        //if (!File.Exists(Application.persistentDataPath + "/InfoData.json"))
+        //{
+        //    File.WriteAllText(Application.persistentDataPath + "/InfoData.json", "");
+        //}
 
-        //data 저장
-        File.WriteAllText(Application.dataPath + "/InfoData.json", JsonUtility.ToJson(body, true));
+        if (File.Exists(Application.persistentDataPath + "/InfoData.json"))
+        {
+            //data 추가
+            string info = File.ReadAllText(Application.persistentDataPath + "/InfoData.json");
+            BodyData bodyData = JsonUtility.FromJson<BodyData>(info);
+            bodyData.body.Add(data1);
+
+            //data 저장
+            File.WriteAllText(Application.persistentDataPath + "/InfoData.json", JsonUtility.ToJson(bodyData, true));
+        }
+        else
+        {
+            //data 저장
+            File.WriteAllText(Application.persistentDataPath + "/InfoData.json", JsonUtility.ToJson(data1, true));
+        }
     }
 
     IEnumerator waitSuccess(float seconds)

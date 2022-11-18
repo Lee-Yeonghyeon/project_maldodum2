@@ -87,7 +87,7 @@ public class InfoController : MonoBehaviour
 
 
         //json parsing
-        string info = File.ReadAllText(Application.dataPath + "/InfoData.json");
+        string info = File.ReadAllText(Application.persistentDataPath + "/InfoData.json");
         BodyData body = JsonUtility.FromJson<BodyData>(info);
         List<Data> datas = new List<Data>();
 

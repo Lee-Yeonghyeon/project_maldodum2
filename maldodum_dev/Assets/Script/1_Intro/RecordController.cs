@@ -7,7 +7,7 @@ using UnityEngine.Video;
 using System;
 
 [RequireComponent(typeof(AudioSource))]
-public class RecordController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class RecordController : MonoBehaviour
 {
     private bool isMicConnected = false;
     private int minFreq;
@@ -48,7 +48,7 @@ public class RecordController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         speekerPlayer = GameObject.Find("SpeekerPlayer").GetComponent<VideoPlayer>();
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnMouseDown()
     {
         if (isMicConnected)
         {
@@ -61,14 +61,14 @@ public class RecordController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnMouseUp()
     {
         if (isMicConnected)
         {
             btnRecord.sprite = recordDeactive;
             Microphone.End(null);
             ViewCheck();
-            
+
         }
     }
 

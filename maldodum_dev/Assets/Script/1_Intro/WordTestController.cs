@@ -44,9 +44,9 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewListen()
     {
-        canvasListen.GetComponent<Canvas>().sortingOrder = 0;
-        canvasSpeek.GetComponent<Canvas>().sortingOrder = -2;
-        canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
+        canvasListen.SetActive(true);
+        canvasSpeek.SetActive(false);
+        canvasCheck.SetActive(false);
     }
 
     public void PlayAudio()
@@ -61,6 +61,9 @@ public class WordTestController : MonoBehaviour
     //
     private void ViewSpeek()
     {
+        canvasListen.SetActive(true);
+        canvasSpeek.SetActive(true);
+        canvasCheck.SetActive(true);
         canvasListen.GetComponent<Canvas>().sortingOrder = -2;
         canvasSpeek.GetComponent<Canvas>().sortingOrder = 0;
         canvasCheck.GetComponent<Canvas>().sortingOrder = -2;
