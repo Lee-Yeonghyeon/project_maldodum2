@@ -1920,6 +1920,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Microphone_IsRecording_mCEA7B33B08404151
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Microphone_GetDeviceCaps_m75923C0A2FF4D28A6DB8BFAE1E6F14EC40D41E2F (int32_t ___deviceID0, int32_t* ___minFreq1, int32_t* ___maxFreq2, const RuntimeMethod* method);
 // System.String UnityEngine.WebCamDevice::get_name()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.WebCamDevice::get_isFrontFacing()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Texture::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture__ctor_mA6FE9CC0AF05A99FADCEF0BED2FB0C95571AAF4A (Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
@@ -3523,6 +3525,30 @@ IL2CPP_EXTERN_C  String_t* WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7D
 	WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * _thisAdjusted = reinterpret_cast<WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C *>(__this + _offset);
 	String_t* _returnValue;
 	_returnValue = WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.WebCamDevice::get_isFrontFacing()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		int32_t L_0 = __this->get_m_Flags_2();
+		V_0 = (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&(int32_t)1))) <= ((uint32_t)0)))? 1 : 0);
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		bool L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * _thisAdjusted = reinterpret_cast<WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C *>(__this + _offset);
+	bool _returnValue;
+	_returnValue = WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15(_thisAdjusted, method);
 	return _returnValue;
 }
 #ifdef __clang__
