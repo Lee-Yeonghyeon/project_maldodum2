@@ -1552,8 +1552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379, y: 2}
-  m_SizeDelta: {x: 715, y: 855}
+  m_AnchoredPosition: {x: -420, y: 2}
+  m_SizeDelta: {x: 819, y: 879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &432470202
 GameObject:
@@ -2096,8 +2096,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379, y: 2}
-  m_SizeDelta: {x: 715, y: 855}
+  m_AnchoredPosition: {x: -420, y: 2}
+  m_SizeDelta: {x: 810, y: 870}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &560462919
 MonoBehaviour:
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4521a2233fb24487cbca60046b42b155, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c78bd96e197224fce8b23686ee0efdf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2286,7 +2286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 379, y: -333}
+  m_AnchoredPosition: {x: 422, y: -333}
   m_SizeDelta: {x: 135, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713411793
@@ -2823,15 +2823,15 @@ RectTransform:
   m_GameObject: {fileID: 966936122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0008, y: 1.0008, z: 1.0008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 119278009}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 379, y: 2}
-  m_SizeDelta: {x: 715, y: 855}
+  m_AnchoredPosition: {x: 417, y: 0}
+  m_SizeDelta: {x: 797, y: 862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &966936124
 MonoBehaviour:
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ec07ffe4ee38422f88c6208d7e32eb7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc1054822d0844ac695b14ec307f688a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3090,8 +3090,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 379, y: 2}
-  m_SizeDelta: {x: 715, y: 855}
+  m_AnchoredPosition: {x: 417, y: 0}
+  m_SizeDelta: {x: 1068, y: 862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1240163841
 GameObject:
@@ -3129,7 +3129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379, y: -333}
+  m_AnchoredPosition: {x: -422, y: -333}
   m_SizeDelta: {x: 135, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240163843
@@ -3522,7 +3522,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488419404}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2de03ccbbbeee49f99908492bdc34ccf, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 813c5f371dd194defbcafd1525973131, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -3792,8 +3792,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 531f5c96f1cb44a05846dadb13aadf8b, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 4466602a8b01b4dd3b1e90fb9ddd79db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4056,7 +4056,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925145237}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: fbcd530683c5345669c440b5f195d6ca, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fb351e7eac8c540298d5a4b4cea96824, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
