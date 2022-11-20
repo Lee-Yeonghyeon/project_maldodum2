@@ -76,11 +76,6 @@ public class RecordSaveController : MonoBehaviour
         data1.accuracy = result;
         data1.date = DateTime.Now.ToString("dd");
 
-        //if (!File.Exists(Application.persistentDataPath + "/InfoData.json"))
-        //{
-        //    File.WriteAllText(Application.persistentDataPath + "/InfoData.json", "");
-        //}
-
         if (File.Exists(Application.persistentDataPath + "/InfoData.json"))
         {
             //data 추가
@@ -105,15 +100,21 @@ public class RecordSaveController : MonoBehaviour
         {
             dodo_s.SetActive(true);
             titi_s.SetActive(false);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            successAudio.clip = Resources.Load("Feedback/도도_성공") as AudioClip;
+            successAudio.Play();
+            yield return new WaitForSeconds(3.5f);
         } else
         {
             dodo_s.SetActive(false);
             titi_s.SetActive(true);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            successAudio.clip = Resources.Load("Feedback/티티_성공") as AudioClip;
+            successAudio.Play();
+            yield return new WaitForSeconds(3.5f);
         }
-        practiceAudio.Play();
-        yield return new WaitForSeconds(seconds);
-        successAudio.Play();
-        yield return new WaitForSeconds(3.5f);
         SceneManager.LoadScene(correctSceneName);
     }
 
@@ -124,22 +125,32 @@ public class RecordSaveController : MonoBehaviour
         {
             dodo_f.SetActive(true);
             titi_f.SetActive(false);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            loadAudio.clip = Resources.Load("Feedback/도도_1,2차재시도공통") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.2f);
+            feedbackAudio.Play();
+            yield return new WaitForSeconds(1.3f);
+            loadAudio.clip = Resources.Load("Feedback/도도_1차재시도") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.4f);
         }
         else
         {
             dodo_f.SetActive(false);
             titi_f.SetActive(true);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            loadAudio.clip = Resources.Load("Feedback/티티_1,2차재시도공통") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.2f);
+            feedbackAudio.Play();
+            yield return new WaitForSeconds(1.3f);
+            loadAudio.clip = Resources.Load("Feedback/티티_1차재시도") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.5f);
         }
-        practiceAudio.Play();
-        yield return new WaitForSeconds(seconds);
-        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
-        loadAudio.Play();
-        yield return new WaitForSeconds(2.2f);
-        feedbackAudio.Play();
-        yield return new WaitForSeconds(1.3f);
-        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1차재시도") as AudioClip;
-        loadAudio.Play();
-        yield return new WaitForSeconds(3.2f);
         SceneManager.LoadScene(wrongSceneName);
     }
 
@@ -150,22 +161,32 @@ public class RecordSaveController : MonoBehaviour
         {
             dodo_f.SetActive(true);
             titi_f.SetActive(false);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            loadAudio.clip = Resources.Load("Feedback/도도_1,2차재시도공통") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.2f);
+            feedbackAudio.Play();
+            yield return new WaitForSeconds(1.3f);
+            loadAudio.clip = Resources.Load("Feedback/도도_2차재시도") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.6f);
         }
         else
         {
             dodo_f.SetActive(false);
             titi_f.SetActive(true);
+            practiceAudio.Play();
+            yield return new WaitForSeconds(seconds);
+            loadAudio.clip = Resources.Load("Feedback/티티_1,2차재시도공통") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.2f);
+            feedbackAudio.Play();
+            yield return new WaitForSeconds(1.3f);
+            loadAudio.clip = Resources.Load("Feedback/티티_2차재시도") as AudioClip;
+            loadAudio.Play();
+            yield return new WaitForSeconds(2.6f);
         }
-        practiceAudio.Play();
-        yield return new WaitForSeconds(seconds);
-        loadAudio.clip = Resources.Load("Feedback/꾸꾸_1,2차재시도공통") as AudioClip;
-        loadAudio.Play();
-        yield return new WaitForSeconds(2.2f);
-        feedbackAudio.Play();
-        yield return new WaitForSeconds(1.3f);
-        loadAudio.clip = Resources.Load("Feedback/꾸꾸_2차재시도") as AudioClip;
-        loadAudio.Play();
-        yield return new WaitForSeconds(3.2f);
         SceneManager.LoadScene(wrongSceneName);
     }
 }

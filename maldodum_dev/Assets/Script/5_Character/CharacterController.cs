@@ -25,7 +25,6 @@ public class CharacterController : MonoBehaviour
         if (isSelect1)
         {
             isSelect1 = false;
-            PlayerPrefs.SetString("char", "titi");
             dodo.sprite = unSelect_dodo;
             titi.sprite = select_titi;
             character.sprite = character_titi;
@@ -33,7 +32,6 @@ public class CharacterController : MonoBehaviour
         else
         {
             isSelect1 = true;
-            PlayerPrefs.SetString("char", "dodo");
             dodo.sprite = select_dodo;
             titi.sprite = unSelect_titi;
             character.sprite = character_dodo;
@@ -43,6 +41,14 @@ public class CharacterController : MonoBehaviour
 
     public void CompleteBtn()
     {
+        if (isSelect1)
+        {
+            PlayerPrefs.SetString("char", "dodo");
+        }
+        else
+        {
+            PlayerPrefs.SetString("char", "titi");
+        }
         ment.SetActive(true);
         Invoke("DeactiveMent", 3.0f);
     }
