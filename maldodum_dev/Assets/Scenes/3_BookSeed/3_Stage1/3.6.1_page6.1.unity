@@ -1067,7 +1067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: 57.5}
+  m_AnchoredPosition: {x: -110, y: 0}
   m_SizeDelta: {x: 115, y: 501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909070172
@@ -1795,7 +1795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 57.5}
+  m_AnchoredPosition: {x: 110, y: 0}
   m_SizeDelta: {x: 116, y: 501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935908519
@@ -2188,7 +2188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041362374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.62, y: -2.61, z: 0}
+  m_LocalPosition: {x: -2.62, y: 1.61, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2226,9 +2226,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn_active: {fileID: 21300000, guid: ddbb4f62fc3fa4b9fa1961f1b42f4ae2, type: 3}
-  nar_sec: 2.5
+  nar_sec: 1.5
   pos_x: -2.68
-  pos_y: -3.02
+  pos_y: 1.11
   scale_x: -0.78
 --- !u!82 &2140279229
 AudioSource:
@@ -2385,7 +2385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140279227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.18, y: -2.46, z: 0}
+  m_LocalPosition: {x: -3.18, y: 1.76, z: 0}
   m_LocalScale: {x: -0.58, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 0}
