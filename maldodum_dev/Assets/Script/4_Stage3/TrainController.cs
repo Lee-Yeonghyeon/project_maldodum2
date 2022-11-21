@@ -11,6 +11,12 @@ public class TrainController : MonoBehaviour
     public string sceneName;
 
     private bool triggerActive = false;
+    private AudioSource trainAudio;
+
+    void Start()
+    {
+        trainAudio = GameObject.Find("train").GetComponent<AudioSource>();
+    }
 
 
     private void OnMouseDrag()
@@ -23,8 +29,11 @@ public class TrainController : MonoBehaviour
     {
         if (triggerActive && correct)
         {
-            Debug.Log("정답이애옹");
             SceneManager.LoadScene(sceneName);
+        }
+        if(triggerActive && !correct)
+        {
+            trainAudio.Play();
         }
         this.transform.position = new Vector3(positionX, positionY, 0.0f);
     }
