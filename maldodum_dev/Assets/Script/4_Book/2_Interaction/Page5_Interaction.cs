@@ -5,15 +5,30 @@ using UnityEngine.Video;
 
 public class Page5_Interaction : MonoBehaviour
 {
+    private VideoPlayer videoPlayer1;
     private VideoPlayer videoPlayer2;
+    private bool active = true;
+    private GameObject interaction_noti;
 
     void Start()
     {
+        videoPlayer1 = GameObject.Find("Video Player(1)").GetComponent<VideoPlayer>();
         videoPlayer2 = GameObject.Find("Video Player(2)").GetComponent<VideoPlayer>();
+        interaction_noti = GameObject.Find("_인터랙션");
+
+        interaction_noti.SetActive(false);
     }
 
     void Update()
     {
+        if (videoPlayer1.isPaused && active)
+        {
+            interaction_noti.SetActive(true);
+            interaction_noti.GetComponent<AudioSource>().Play();
+            active = false;
+            Invoke("InteractionNotification_false", 0.8f);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -34,5 +49,9 @@ public class Page5_Interaction : MonoBehaviour
 
     }
 
+    private void InteractionNotification_false()
+    {
+        interaction_noti.SetActive(false);
+    }
 
 }

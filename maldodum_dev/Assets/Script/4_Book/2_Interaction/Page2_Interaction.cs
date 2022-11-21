@@ -11,15 +11,30 @@ public class Page2_Interaction : MonoBehaviour
     public Sprite sun_sprite;
 
     private int count = 0;
+    private bool active = true;
     private Image sun_image;
+    private AudioSource narration;
+    private GameObject interaction_noti;
 
     private void Start()
     {
         sun_image = GameObject.Find("2_8 해").GetComponent<Image>();
+        narration = GameObject.Find("4_0_7 형광펜").GetComponent<AudioSource>();
+        interaction_noti = GameObject.Find("_인터랙션");
+
+        interaction_noti.SetActive(false);
     }
 
     void Update()
     {
+        if(!narration.isPlaying && active)
+        {
+            interaction_noti.SetActive(true);
+            interaction_noti.GetComponent<AudioSource>().Play();
+            active = false;
+            Invoke("InteractionNotification_false", 0.8f);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -33,15 +48,18 @@ public class Page2_Interaction : MonoBehaviour
                 if (click_object.name.Equals("2_2 병아리1"))
                 {
                     click_object.GetComponent<Image>().sprite = chick1_sprite;
+                    click_object.GetComponent<AudioSource>().Play();
                     count++;
                 }
                 else if (click_object.name.Equals("2_4 병아리2"))
                 {
                     click_object.GetComponent<Image>().sprite = chick2_sprite;
+                    click_object.GetComponent<AudioSource>().Play();
                     count++;
                 }
                 else if(click_object.name.Equals("2_6 병아리3")) {
                     click_object.GetComponent<Image>().sprite = chick3_sprite;
+                    click_object.GetComponent<AudioSource>().Play();
                     count++;
                 }
             }
@@ -52,5 +70,10 @@ public class Page2_Interaction : MonoBehaviour
         {
             sun_image.sprite = sun_sprite;
         }
+    }
+
+    private void InteractionNotification_false()
+    {
+        interaction_noti.SetActive(false);
     }
 }

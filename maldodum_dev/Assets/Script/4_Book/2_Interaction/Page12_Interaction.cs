@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class Page12_Interaction : MonoBehaviour
@@ -13,11 +14,18 @@ public class Page12_Interaction : MonoBehaviour
     private bool active = true;
     private AudioSource narration;
     private VideoPlayer video;
+    private Image tissue;
+    private Image tissueBox;
     
     void Start()
     {
         narration = GameObject.Find("4_0_7 형광펜").GetComponent<AudioSource>();
         video = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
+        tissue = GameObject.Find("12_4 휴지").GetComponent<Image>();
+        tissueBox = GameObject.Find("12_3 휴지곽").GetComponent<Image>();
+
+        tissue.color = Color.clear;
+        tissueBox.color = Color.clear;
     }
 
     
@@ -25,9 +33,12 @@ public class Page12_Interaction : MonoBehaviour
     {
         if (!narration.isPlaying && active)
         {
+            tissue.color = Color.white;
+            tissueBox.color = Color.white;
             video.Play();
             active = false;
         }
+
     }
 
 

@@ -11,14 +11,28 @@ public class Page17_Interaction : MonoBehaviour
     public Sprite egg5;
 
     private int count = 0;
+    private bool active = true;
+    private AudioSource narration;
+    private GameObject interaction_noti;
 
     void Start()
     {
-        
+        narration = GameObject.Find("4_0_7 형광펜").GetComponent<AudioSource>();
+        interaction_noti = GameObject.Find("_인터랙션");
+
+        interaction_noti.SetActive(false);
     }
 
     void Update()
     {
+        if (!narration.isPlaying && active)
+        {
+            interaction_noti.SetActive(true);
+            interaction_noti.GetComponent<AudioSource>().Play();
+            active = false;
+            Invoke("InteractionNotification_false", 0.8f);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -34,26 +48,30 @@ public class Page17_Interaction : MonoBehaviour
                     if(count == 0)
                     {
                         click_object.GetComponent<Image>().sprite = egg2;
-                        count++;
                     }
                     else if (count == 1)
                     {
                         click_object.GetComponent<Image>().sprite = egg3;
-                        count++;
                     }
                     else if (count == 2)
                     {
                         click_object.GetComponent<Image>().sprite = egg4;
-                        count++;
                     }
                     else if (count == 3)
                     {
                         click_object.GetComponent<Image>().sprite = egg5;
-                        count++;
+                        click_object.GetComponent<AudioSource>().clip = Resources.Load("Interaction/17_2 효과음_황금") as AudioClip;
+                        click_object.GetComponent<AudioSource>().volume = 0.5f;
                     }
-
+                    click_object.GetComponent<AudioSource>().Play();
+                    count++;
                 }
             }
         }
+    }
+
+    private void InteractionNotification_false()
+    {
+        interaction_noti.SetActive(false);
     }
 }

@@ -10,14 +10,28 @@ public class Page3_Interaction : MonoBehaviour
     public Sprite teacher_korean;
 
     private int count = 0;
+    private bool active = true;
+    private AudioSource narration;
+    private GameObject interaction_noti;
 
     void Start()
     {
-        
+        narration = GameObject.Find("4_0_7 형광펜").GetComponent<AudioSource>();
+        interaction_noti = GameObject.Find("_인터랙션");
+
+        interaction_noti.SetActive(false);
     }
 
     void Update()
     {
+        if (!narration.isPlaying && active)
+        {
+            interaction_noti.SetActive(true);
+            interaction_noti.GetComponent<AudioSource>().Play();
+            active = false;
+            Invoke("InteractionNotification_false", 0.8f);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -42,11 +56,15 @@ public class Page3_Interaction : MonoBehaviour
                     {
                         click_object.GetComponent<Image>().sprite = teacher_default;
                     }
+                    click_object.GetComponent<AudioSource>().Play();
                     count++;
                 }
             }
         }
     }
 
-
+    private void InteractionNotification_false()
+    {
+        interaction_noti.SetActive(false);
+    }
 }
