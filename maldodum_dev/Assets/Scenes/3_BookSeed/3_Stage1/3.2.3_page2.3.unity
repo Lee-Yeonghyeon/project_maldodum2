@@ -830,7 +830,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 417, y: 0}
-  m_SizeDelta: {x: 1068, y: 862}
+  m_SizeDelta: {x: 797, y: 862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &541663929
 GameObject:
@@ -1647,7 +1647,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165137624}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a433c316de77944cfbf5807817acd68f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: e59caad6eb4954e2ab23b24fc33133ea, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
