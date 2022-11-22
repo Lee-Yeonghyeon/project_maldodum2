@@ -11,9 +11,12 @@ public class StageBtnChange : MonoBehaviour
     public Button btn2;
     public Button btn3;
 
-    public Sprite img1;
-    public Sprite img2;
-    public Sprite img3;
+    public Sprite img1_open;
+    public Sprite img2_open;
+    public Sprite img3_open;
+    public Sprite img1_clear;
+    public Sprite img2_clear;
+    public Sprite img3_clear;
 
     void Start()
     {
@@ -26,23 +29,22 @@ public class StageBtnChange : MonoBehaviour
         if (stage1.Equals("complete"))
         {
             scrollbar.value = 0.5f;
+            this.btn1.GetComponent<Image>().sprite = this.img1_clear;
             this.btn2.interactable = true;
-            this.btn1.GetComponent<Image>().sprite = this.img1;
+            this.btn2.GetComponent<Image>().sprite = this.img2_open;
         }
         if (stage2.Equals("complete"))
         {
             scrollbar.value = 1.0f;
+            this.btn2.GetComponent<Image>().sprite = this.img2_clear;
             this.btn3.interactable = true;
-            this.btn2.GetComponent<Image>().sprite = this.img2;
+            this.btn3.GetComponent<Image>().sprite = this.img3_open;
         }
         if (stage3.Equals("complete"))
         {
             scrollbar.value = 1.0f;
-            this.btn3.interactable = true;
-            this.btn3.GetComponent<Image>().sprite = this.img3;
+            this.btn3.GetComponent<Image>().sprite = this.img3_clear;
         }
-
-        Debug.Log(level);
     }
 
     void Update()
