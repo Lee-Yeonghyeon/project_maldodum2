@@ -172,13 +172,13 @@ public class InfoController : MonoBehaviour
 
         for (int i = 0; i < datasSize; i++)
         {
-            if (datas[i].date == "14") words[0]++;
-            else if (datas[i].date == "15") words[1]++;
-            else if (datas[i].date == "16") words[2]++;
-            else if (datas[i].date == "17") words[3]++;
-            else if (datas[i].date == "18") words[4]++;
-            else if (datas[i].date == "19") words[5]++;
-            else if (datas[i].date == "20") words[6]++;
+            if (datas[i].date == "28") words[0]++;
+            else if (datas[i].date == "29") words[1]++;
+            else if (datas[i].date == "30") words[2]++;
+            else if (datas[i].date == "1" || datas[i].date == "01") words[3]++;
+            else if (datas[i].date == "2" || datas[i].date == "02") words[4]++;
+            else if (datas[i].date == "3" || datas[i].date == "03") words[5]++;
+            else if (datas[i].date == "4" || datas[i].date == "04") words[6]++;
 
         }
 

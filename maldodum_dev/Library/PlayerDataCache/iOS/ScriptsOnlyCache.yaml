@@ -51,11 +51,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -301,6 +298,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2538}
     - Class: 114
       Script: {instanceID: 2972}
+    - Class: 114
+      Script: {instanceID: 3064}
     - Class: 114
       Script: {instanceID: 3192}
     - Class: 114
@@ -6398,6 +6397,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -7226,7 +7229,7 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
-      Hash: a829c8f9e1687ef0fd8c53b6eb106142
+      Hash: 4d3a122ce758755880d11fa115558070
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StageBtnChange
@@ -7430,4 +7433,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/10_Dictionary/10.2_NiceChicken.unity
   - Assets/Scenes/10_Dictionary/10.3_CookCookABC.unity
   - Assets/Scenes/11_Information/11_Information.unity
-  playerPath: /Users/swumac/Desktop/untitled folder
+  playerPath: /Users/swumac/Desktop/untitled folder 2
