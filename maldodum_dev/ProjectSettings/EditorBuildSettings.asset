@@ -40,7 +40,7 @@ EditorBuildSettings:
     guid: 03f77050bf39d4c2fad4865bb8818831
   - enabled: 1
     path: Assets/Scenes/2_BookCase.unity
-    guid: c900b3c95736d4f10893e6af956b23c9
+    guid: 2353e6025cd7b44c2a783bf20e39a498
   - enabled: 1
     path: Assets/Scenes/2.1_Tree.unity
     guid: 086af5831805f4321b95540e8ecb3690
@@ -278,6 +278,126 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3_BookSeed/5_Stage3/5.3_end.unity
     guid: 81286dcb156224dfda07629d403901f5
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.0.1_page0.1.unity
+    guid: 5ef4b6b96158a4055a1dcf73eaa98231
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.1.1_page1.1.unity
+    guid: b4cdb2edc2db543dcaf82b9ae9a5d155
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.2.1_page2.1.unity
+    guid: 9897eff707a724b0b95b8f952b7f0317
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.3.1_page3.1.unity
+    guid: b5d1cdc335f4e4d7caf08e0d954374a0
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.3.2_page3.2.unity
+    guid: 3bfb7aa380dfd4cefbd97a509d29778e
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.3.3_page3.3.unity
+    guid: 1bbb96493af9c48998007ceffa22c3e0
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.3.4_page3.4.unity
+    guid: d1ec274d1363f4acc87395c0eed06cc9
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.4.1_page4.1.unity
+    guid: c9d372042d62a411fa1d70609a8db0d1
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.5.1_page5.1.unity
+    guid: 7dbf6f1e2f0b8499a8be2d7040586e23
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.6.1_page6.1.unity
+    guid: 2f9a94248edc64c22995df9d5ef5aeac
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.6.2_page6.2.unity
+    guid: a00c334114cdd489b96cb00a5d5e03cd
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.6.3_page6.3.unity
+    guid: c028b354ab318444795c5478e1686e82
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.6.4_page6.4.unity
+    guid: 4837244a51427418c8fdb776001fc53c
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.7.1_page7.1.unity
+    guid: a0808c9f36f41413d97c124466042ad8
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.8.1_page8.1.unity
+    guid: 6f671492154834286baf3b7a82b51029
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.9.1_page9.1.unity
+    guid: 168330d8833954d9d9bf921ed9e54e5d
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.10.1_page10.1.unity
+    guid: 64aa3f41253e648ff9d6dc99a3d736c6
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.11.1_page11.1.unity
+    guid: 4da0176dc497d4e73a56608ecbe9ac9b
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.12.1_page12.1.unity
+    guid: a65ae784229ee4a9e815870f866104a5
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.12.2_page12.2.unity
+    guid: d54d99aa729864e44aee934c047fbeb9
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.12.3_page12.3.unity
+    guid: 5ddbc69847c1545a6b342b1b199dce67
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.12.4_page12.4.unity
+    guid: 1f1e470eebf4c4c5a9434518fc4acd07
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.13.1_page13.1.unity
+    guid: d95245709b94d47d5a49628a9b6ae917
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.14.1_page14.1.unity
+    guid: 900e71db9e7974959b8f55deb128bdac
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.15.1_page15.1.unity
+    guid: 38dd6a109085b41d7bb7647fafad818f
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.15.2_page15.2.unity
+    guid: 49a2ec93ae7f4480fa3a1961c58f225b
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.15.3_page15.3.unity
+    guid: 7e1700aa9de6d498681b0fe0219fcc42
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.15.4_page15.4.unity
+    guid: 5cc3a738a058447fc8506251d0a045be
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.16.1_page16.1.unity
+    guid: 1d9e3d11e1d8a461ba23bee42d28c0e1
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.16.2_page16.2.unity
+    guid: 823244e402a6a4a0081d0c15dd51404c
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.16.3_page16.3.unity
+    guid: 037740c3240f943b1a9406d5800da697
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.16.4_page16.4.unity
+    guid: cc730321a975547dea3e8122cf925841
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.17.1_page17.1.unity
+    guid: 8c658a165c753461d849bf969f84c4d3
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.18.1_page18.1.unity
+    guid: f5d63c4ab4bac4b1e8d3ecdf272b8bc2
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.19.1_page19.1.unity
+    guid: 4f01618b571b54ee8bc6f0adce465983
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.20.1_page20.1.unity
+    guid: 47142c774eebc4e6e9207b9151b58b36
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.20.2_page20.2.unity
+    guid: ab906d52851ad41378866a5fd933c9b9
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.20.3_page20.3.unity
+    guid: 83caea0c18c6e449fa7a7da307f9ffb6
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.20.4_page20.4.unity
+    guid: 6e2404f07bd0b41a7b6b86bbfd747b41
+  - enabled: 1
+    path: Assets/Scenes/6_BookSpout/6_Stage1/6.21.1_page21.1.unity
+    guid: a0a140896fe20407d88272a97d5d1bdc
   - enabled: 1
     path: Assets/Scenes/9_Character/9_Character.unity
     guid: ec18e428adbf642a8876d9ab1ab48750
