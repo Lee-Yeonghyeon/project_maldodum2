@@ -18,13 +18,24 @@ public class StageBtnChange : MonoBehaviour
     public Sprite img2_clear;
     public Sprite img3_clear;
 
+    private string stage1 = "";
+    private string stage2 = "";
+    private string stage3 = "";
+
     void Start()
     {
-        string stage1 = PlayerPrefs.GetString("Stage1");        //단계 완료시 complete, 미완료시 incomplete
-        string stage2 = PlayerPrefs.GetString("Stage2");
-        string stage3 = PlayerPrefs.GetString("Stage3");
+        if (PlayerPrefs.GetString("level").Equals("seed"))      //씨앗 단계는 seed, 새싹 단계는 spout
+        {
+            stage1 = PlayerPrefs.GetString("Stage1_seed");        //단계 완료시 complete, 미완료시 incomplete
+            stage2 = PlayerPrefs.GetString("Stage2_seed");
+            stage3 = PlayerPrefs.GetString("Stage3_seed");
+        } else
+        {
+            stage1 = PlayerPrefs.GetString("Stage1_spout");        //단계 완료시 complete, 미완료시 incomplete
+            stage2 = PlayerPrefs.GetString("Stage2_spout");
+            stage3 = PlayerPrefs.GetString("Stage3_spout");
+        }
 
-        string level = PlayerPrefs.GetString("level");          //씨앗 단계는 seed, 새싹 단계는 spout
 
         if (stage1.Equals("complete"))
         {
