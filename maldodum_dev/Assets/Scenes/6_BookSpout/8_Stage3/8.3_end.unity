@@ -295,9 +295,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1063682877}
-  sprite1: {fileID: 21300000, guid: 08a1d60473c974dd484042d0870ed69f, type: 3}
-  sprite2: {fileID: 21300000, guid: 43484091a1731459aa8f5c302d26ea95, type: 3}
-  sprite3: {fileID: 21300000, guid: 4ba2ec2a84d2a49d89fb9da67c2fe0dd, type: 3}
+  sprite1: {fileID: 21300000, guid: b4eeaa56dcc9141108b64b36baa0fde8, type: 3}
+  sprite2: {fileID: 21300000, guid: 2850517e909e54194a77666f7cc326c6, type: 3}
+  sprite3: {fileID: 21300000, guid: cda4a6a8eab0b4bea8497dc382f7257b, type: 3}
 --- !u!81 &36164163
 AudioListener:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 08a1d60473c974dd484042d0870ed69f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4eeaa56dcc9141108b64b36baa0fde8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
