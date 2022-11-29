@@ -958,7 +958,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 299230640}
         m_TargetAssemblyTypeName: SaveUserInfo, Assembly-CSharp
-        m_MethodName: stageReset
+        m_MethodName: stageComplete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2760,6 +2760,7 @@ GameObject:
   - component: {fileID: 1151094741}
   - component: {fileID: 1151094740}
   - component: {fileID: 1151094739}
+  - component: {fileID: 1151094742}
   m_Layer: 5
   m_Name: "2_4 \uC528\uC557"
   m_TagString: Untagged
@@ -2829,7 +2830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1151094740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1151094742}
+        m_TargetAssemblyTypeName: SaveUserInfo, Assembly-CSharp
+        m_MethodName: stageReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1151094740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2868,6 +2881,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151094737}
   m_CullTransparentMesh: 1
+--- !u!114 &1151094742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151094737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93c14814df4f4d87adbe06c41c646b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156036957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,8 +3092,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2022198952}
   m_HandleRect: {fileID: 2022198951}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.5
+  m_Value: -0.00000006085259
+  m_Size: 0.49999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
