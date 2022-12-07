@@ -114,8 +114,8 @@ public class SpeechToText : MonoBehaviour
 		UnityWebRequest request = UnityWebRequest.Post(url, form);
 
 		// 요청 헤더 설정
-		request.SetRequestHeader("X-NCP-APIGW-API-KEY-ID", "ex75mlx2mv");
-		request.SetRequestHeader("X-NCP-APIGW-API-KEY", "GmvcS77loE4q0eVFmSS6vLiVBQ8JEICsRQRnuP4A");
+		request.SetRequestHeader("X-NCP-APIGW-API-KEY-ID", "fau3w5tnbq");
+		request.SetRequestHeader("X-NCP-APIGW-API-KEY", "AOojvqsW47ur1Iwk71Um835F237AsHsZ17z6X6qH");
 		request.SetRequestHeader("Content-Type", "application/octet-stream");
 
 
